@@ -1,0 +1,39 @@
+message Message{
+    required MessageType type = 1;
+    required Info info = 2;
+    optional Response response = 3;
+    optional SemOptions semOption = 4;
+    optional CheckBlock checkBlock = 5;
+
+    enum MessageType {
+        HB = 0;
+        SEM_CREATE = 1;
+        SEM_DESTROY = 2;
+        SEM_P = 3;
+        SEM_V = 4;
+        SEM_CHECK = 5;
+        CHECK_BLOCK = 6; //brane
+    }
+
+    enum Response{
+        OK = 0;
+        NO = 1;
+        ERROR = 2;
+    }
+
+    message Info{
+        required int32 ipIndex = 1;
+    }
+
+    message SemOptions{
+        required string name = 1;
+        optional int32 value = 2;      //brane pod uwagę tylko przy tworzeniu
+    }
+
+    //struktura do wykorzystyna przy sprawdzaniu zakleszczenia
+    message CheckBlock{
+        required int32 initClient = 1;
+        required int32 sendingClient = 2;
+    required string targetSem = 3;
+    }
+}

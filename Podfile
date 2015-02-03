@@ -6,6 +6,10 @@ inhibit_all_warnings!
 
 target 'SRemafory' do
     pod 'ProtocolBuffers', '~> 1.9'
-    pod 'libzmq', '~> 4.0'
+    pod "objc-zmq", :git => 'https://github.com/jeremy-w/objc-zmq.git'
 end
 
+target 'SRemaforyClient' do
+    pod 'ProtocolBuffers', '~> 1.9'
+    pod "objc-zmq", :git => 'https://github.com/jeremy-w/objc-zmq.git'
+end
