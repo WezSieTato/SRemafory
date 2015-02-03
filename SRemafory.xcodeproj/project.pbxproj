@@ -17,6 +17,7 @@
 		D3C56AE31A81172E001A6C7D /* MessageBuilder+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C56AE11A81172E001A6C7D /* MessageBuilder+Addition.m */; };
 		D3C56AE61A811F32001A6C7D /* ZMQSocket+Message.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C56AE51A811F32001A6C7D /* ZMQSocket+Message.m */; };
 		D3C56AE71A811F32001A6C7D /* ZMQSocket+Message.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C56AE51A811F32001A6C7D /* ZMQSocket+Message.m */; };
+		D3C56AEB1A81491B001A6C7D /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C56AEA1A81491B001A6C7D /* Member.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +57,8 @@
 		D3C56AE11A81172E001A6C7D /* MessageBuilder+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MessageBuilder+Addition.m"; sourceTree = "<group>"; };
 		D3C56AE41A811F32001A6C7D /* ZMQSocket+Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZMQSocket+Message.h"; sourceTree = "<group>"; };
 		D3C56AE51A811F32001A6C7D /* ZMQSocket+Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZMQSocket+Message.m"; sourceTree = "<group>"; };
+		D3C56AE91A81491B001A6C7D /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
+		D3C56AEA1A81491B001A6C7D /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
 		F0C8437DA38A56012BFF22E5 /* Pods-SRemaforyClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRemaforyClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SRemaforyClient/Pods-SRemaforyClient.debug.xcconfig"; sourceTree = "<group>"; };
 		F2AC6350B0BBA07C50CECA1F /* Pods-SRemafory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRemafory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SRemafory/Pods-SRemafory.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +158,8 @@
 		D3C56AE81A81473F001A6C7D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D3C56AE91A81491B001A6C7D /* Member.h */,
+				D3C56AEA1A81491B001A6C7D /* Member.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				D3C56ADD1A81140C001A6C7D /* Message.pb.m in Sources */,
 				D3BFFE161A66A4D80031C45A /* main.m in Sources */,
 				D3C56AE61A811F32001A6C7D /* ZMQSocket+Message.m in Sources */,
+				D3C56AEB1A81491B001A6C7D /* Member.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
