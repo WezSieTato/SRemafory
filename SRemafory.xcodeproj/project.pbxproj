@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2918D120754472130A01790A /* libPods-SRemaforyServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD608B62926DCAB566EDD62D /* libPods-SRemaforyServer.a */; };
+		65588B041A82E1A100CCCDF7 /* TaskSemVote.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B031A82E1A100CCCDF7 /* TaskSemVote.m */; };
+		65588B071A82E38600CCCDF7 /* AskTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B061A82E38600CCCDF7 /* AskTask.m */; };
+		65588B141A82E46200CCCDF7 /* ClientSemCheckTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B0A1A82E46200CCCDF7 /* ClientSemCheckTask.m */; };
+		65588B151A82E46200CCCDF7 /* TaskWantSemCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B0C1A82E46200CCCDF7 /* TaskWantSemCheck.m */; };
+		65588B161A82E46200CCCDF7 /* ClientSemCreateTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B0F1A82E46200CCCDF7 /* ClientSemCreateTask.m */; };
+		65588B171A82E46200CCCDF7 /* AskTaskSemCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B111A82E46200CCCDF7 /* AskTaskSemCreate.m */; };
+		65588B181A82E46200CCCDF7 /* TaskWantSemCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B131A82E46200CCCDF7 /* TaskWantSemCreate.m */; };
+		65588B1B1A82E4B500CCCDF7 /* AskTaskSemCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B1A1A82E4B500CCCDF7 /* AskTaskSemCheck.m */; };
 		655CB3761A81B03F00FFF253 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3751A81B03F00FFF253 /* AppDelegate.m */; };
 		655CB3781A81B03F00FFF253 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3771A81B03F00FFF253 /* main.m */; };
 		655CB37A1A81B03F00FFF253 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655CB3791A81B03F00FFF253 /* Images.xcassets */; };
@@ -49,10 +57,7 @@
 		D3B07EC91A8286460050A49B /* ServerSemaphores.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EC31A8286460050A49B /* ServerSemaphores.m */; };
 		D3B07ECC1A8286860050A49B /* SRerwer.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07ECB1A8286860050A49B /* SRerwer.m */; };
 		D3B07ED31A8296460050A49B /* ClientTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07ED21A8296460050A49B /* ClientTask.m */; };
-		D3B07ED61A8296740050A49B /* ClientSemCreateTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07ED51A8296740050A49B /* ClientSemCreateTask.m */; };
 		D3B07ED91A8299370050A49B /* SR+SRerwer.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07ED81A8299370050A49B /* SR+SRerwer.m */; };
-		D3B07EDC1A82A0BB0050A49B /* TaskWantSemCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EDB1A82A0BB0050A49B /* TaskWantSemCreate.m */; };
-		D3B07EDF1A82A9F00050A49B /* TaskServerWantSemCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EDE1A82A9F00050A49B /* TaskServerWantSemCreate.m */; };
 		D3B07EE31A82AE1E0050A49B /* SRient.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EE21A82AE1E0050A49B /* SRient.m */; };
 		D3B07EE61A82AE300050A49B /* SR+SRient.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EE51A82AE300050A49B /* SR+SRient.m */; };
 /* End PBXBuildFile section */
@@ -60,6 +65,22 @@
 /* Begin PBXFileReference section */
 		0FF3F8166FEBE4EA9D9F27A4 /* libPods-SRemaforyClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SRemaforyClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34ECB28D7636C7ADCF96BEAD /* Pods-SRemaforyClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRemaforyClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-SRemaforyClient/Pods-SRemaforyClient.release.xcconfig"; sourceTree = "<group>"; };
+		65588B021A82E1A100CCCDF7 /* TaskSemVote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskSemVote.h; sourceTree = "<group>"; };
+		65588B031A82E1A100CCCDF7 /* TaskSemVote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskSemVote.m; sourceTree = "<group>"; };
+		65588B051A82E38600CCCDF7 /* AskTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskTask.h; sourceTree = "<group>"; };
+		65588B061A82E38600CCCDF7 /* AskTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskTask.m; sourceTree = "<group>"; };
+		65588B091A82E46200CCCDF7 /* ClientSemCheckTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientSemCheckTask.h; sourceTree = "<group>"; };
+		65588B0A1A82E46200CCCDF7 /* ClientSemCheckTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientSemCheckTask.m; sourceTree = "<group>"; };
+		65588B0B1A82E46200CCCDF7 /* TaskWantSemCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskWantSemCheck.h; sourceTree = "<group>"; };
+		65588B0C1A82E46200CCCDF7 /* TaskWantSemCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskWantSemCheck.m; sourceTree = "<group>"; };
+		65588B0E1A82E46200CCCDF7 /* ClientSemCreateTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientSemCreateTask.h; sourceTree = "<group>"; };
+		65588B0F1A82E46200CCCDF7 /* ClientSemCreateTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientSemCreateTask.m; sourceTree = "<group>"; };
+		65588B101A82E46200CCCDF7 /* AskTaskSemCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskTaskSemCreate.h; sourceTree = "<group>"; };
+		65588B111A82E46200CCCDF7 /* AskTaskSemCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskTaskSemCreate.m; sourceTree = "<group>"; };
+		65588B121A82E46200CCCDF7 /* TaskWantSemCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskWantSemCreate.h; sourceTree = "<group>"; };
+		65588B131A82E46200CCCDF7 /* TaskWantSemCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskWantSemCreate.m; sourceTree = "<group>"; };
+		65588B191A82E4B500CCCDF7 /* AskTaskSemCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskTaskSemCheck.h; sourceTree = "<group>"; };
+		65588B1A1A82E4B500CCCDF7 /* AskTaskSemCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskTaskSemCheck.m; sourceTree = "<group>"; };
 		655CB3501A817C3C00FFF253 /* Receiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Receiver.h; sourceTree = "<group>"; };
 		655CB3511A817C3C00FFF253 /* Receiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Receiver.m; sourceTree = "<group>"; };
 		655CB3531A81832C00FFF253 /* SR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SR.h; sourceTree = "<group>"; };
@@ -114,14 +135,8 @@
 		D3B07ECB1A8286860050A49B /* SRerwer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRerwer.m; sourceTree = "<group>"; };
 		D3B07ED11A8296460050A49B /* ClientTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientTask.h; sourceTree = "<group>"; };
 		D3B07ED21A8296460050A49B /* ClientTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientTask.m; sourceTree = "<group>"; };
-		D3B07ED41A8296740050A49B /* ClientSemCreateTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientSemCreateTask.h; sourceTree = "<group>"; };
-		D3B07ED51A8296740050A49B /* ClientSemCreateTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientSemCreateTask.m; sourceTree = "<group>"; };
 		D3B07ED71A8299370050A49B /* SR+SRerwer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SR+SRerwer.h"; sourceTree = "<group>"; };
 		D3B07ED81A8299370050A49B /* SR+SRerwer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SR+SRerwer.m"; sourceTree = "<group>"; };
-		D3B07EDA1A82A0BB0050A49B /* TaskWantSemCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskWantSemCreate.h; sourceTree = "<group>"; };
-		D3B07EDB1A82A0BB0050A49B /* TaskWantSemCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskWantSemCreate.m; sourceTree = "<group>"; };
-		D3B07EDD1A82A9F00050A49B /* TaskServerWantSemCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskServerWantSemCreate.h; sourceTree = "<group>"; };
-		D3B07EDE1A82A9F00050A49B /* TaskServerWantSemCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskServerWantSemCreate.m; sourceTree = "<group>"; };
 		D3B07EE11A82AE1E0050A49B /* SRient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRient.h; sourceTree = "<group>"; };
 		D3B07EE21A82AE1E0050A49B /* SRient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRient.m; sourceTree = "<group>"; };
 		D3B07EE41A82AE300050A49B /* SR+SRient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SR+SRient.h"; sourceTree = "<group>"; };
@@ -162,6 +177,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65588B081A82E46200CCCDF7 /* SemCheck */ = {
+			isa = PBXGroup;
+			children = (
+				65588B091A82E46200CCCDF7 /* ClientSemCheckTask.h */,
+				65588B0A1A82E46200CCCDF7 /* ClientSemCheckTask.m */,
+				65588B0B1A82E46200CCCDF7 /* TaskWantSemCheck.h */,
+				65588B0C1A82E46200CCCDF7 /* TaskWantSemCheck.m */,
+				65588B191A82E4B500CCCDF7 /* AskTaskSemCheck.h */,
+				65588B1A1A82E4B500CCCDF7 /* AskTaskSemCheck.m */,
+			);
+			path = SemCheck;
+			sourceTree = "<group>";
+		};
+		65588B0D1A82E46200CCCDF7 /* SemCreate */ = {
+			isa = PBXGroup;
+			children = (
+				65588B0E1A82E46200CCCDF7 /* ClientSemCreateTask.h */,
+				65588B0F1A82E46200CCCDF7 /* ClientSemCreateTask.m */,
+				65588B101A82E46200CCCDF7 /* AskTaskSemCreate.h */,
+				65588B111A82E46200CCCDF7 /* AskTaskSemCreate.m */,
+				65588B121A82E46200CCCDF7 /* TaskWantSemCreate.h */,
+				65588B131A82E46200CCCDF7 /* TaskWantSemCreate.m */,
+			);
+			path = SemCreate;
+			sourceTree = "<group>";
+		};
 		655CB3711A81B03F00FFF253 /* SRemaforyServer */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,14 +310,14 @@
 		D3B07ED01A8296460050A49B /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				65588B081A82E46200CCCDF7 /* SemCheck */,
+				65588B0D1A82E46200CCCDF7 /* SemCreate */,
 				D3B07ED11A8296460050A49B /* ClientTask.h */,
 				D3B07ED21A8296460050A49B /* ClientTask.m */,
-				D3B07ED41A8296740050A49B /* ClientSemCreateTask.h */,
-				D3B07ED51A8296740050A49B /* ClientSemCreateTask.m */,
-				D3B07EDA1A82A0BB0050A49B /* TaskWantSemCreate.h */,
-				D3B07EDB1A82A0BB0050A49B /* TaskWantSemCreate.m */,
-				D3B07EDD1A82A9F00050A49B /* TaskServerWantSemCreate.h */,
-				D3B07EDE1A82A9F00050A49B /* TaskServerWantSemCreate.m */,
+				65588B021A82E1A100CCCDF7 /* TaskSemVote.h */,
+				65588B031A82E1A100CCCDF7 /* TaskSemVote.m */,
+				65588B051A82E38600CCCDF7 /* AskTask.h */,
+				65588B061A82E38600CCCDF7 /* AskTask.m */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -521,27 +562,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				655CB3941A81B0E300FFF253 /* Receiver.m in Sources */,
-				D3B07EDC1A82A0BB0050A49B /* TaskWantSemCreate.m in Sources */,
 				655CB3911A81B0DE00FFF253 /* TaskMessage.m in Sources */,
 				655CB39A1A81B0E900FFF253 /* ZMQSocket+Message.m in Sources */,
 				D3B07EC61A8286460050A49B /* ForeignSemaphores.m in Sources */,
 				D3B07EC81A8286460050A49B /* ServerSemaphore.m in Sources */,
+				65588B1B1A82E4B500CCCDF7 /* AskTaskSemCheck.m in Sources */,
+				65588B041A82E1A100CCCDF7 /* TaskSemVote.m in Sources */,
 				655CB3931A81B0E300FFF253 /* Member.m in Sources */,
-				D3B07ED61A8296740050A49B /* ClientSemCreateTask.m in Sources */,
 				655CB3991A81B0E900FFF253 /* MessageBuilder+Addition.m in Sources */,
-				D3B07EDF1A82A9F00050A49B /* TaskServerWantSemCreate.m in Sources */,
 				D3B07ED31A8296460050A49B /* ClientTask.m in Sources */,
 				D3B07ED91A8299370050A49B /* SR+SRerwer.m in Sources */,
 				655CB3921A81B0DE00FFF253 /* TaskGetHB.m in Sources */,
+				65588B071A82E38600CCCDF7 /* AskTask.m in Sources */,
 				655CB3981A81B0E900FFF253 /* Message.pb.m in Sources */,
 				D3B07EA01A82733A0050A49B /* TimeTask.m in Sources */,
+				65588B171A82E46200CCCDF7 /* AskTaskSemCreate.m in Sources */,
 				655CB3971A81B0E300FFF253 /* TaskManager.m in Sources */,
+				65588B181A82E46200CCCDF7 /* TaskWantSemCreate.m in Sources */,
 				655CB3951A81B0E300FFF253 /* SR.m in Sources */,
 				655CB3781A81B03F00FFF253 /* main.m in Sources */,
+				65588B151A82E46200CCCDF7 /* TaskWantSemCheck.m in Sources */,
 				655CB3761A81B03F00FFF253 /* AppDelegate.m in Sources */,
 				D3B07EC41A8286460050A49B /* AbstractSemafor.m in Sources */,
 				D3B07EC91A8286460050A49B /* ServerSemaphores.m in Sources */,
+				65588B141A82E46200CCCDF7 /* ClientSemCheckTask.m in Sources */,
 				D3B07EC51A8286460050A49B /* ForeignSemaphore.m in Sources */,
+				65588B161A82E46200CCCDF7 /* ClientSemCreateTask.m in Sources */,
 				655CB3961A81B0E300FFF253 /* Task.m in Sources */,
 				D3B07ECC1A8286860050A49B /* SRerwer.m in Sources */,
 				D3B07EC71A8286460050A49B /* Semaphores.m in Sources */,

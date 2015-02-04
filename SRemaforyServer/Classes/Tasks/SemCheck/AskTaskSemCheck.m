@@ -1,33 +1,28 @@
 //
-//  TaskServerWantSemCreate.m
+//  AskTaskSemCheck.m
 //  SRemafory
 //
-//  Created by Marcin Stepnowski on 04/02/15.
+//  Created by Marcin Stepnowski on 05/02/15.
 //  Copyright (c) 2015 siema. All rights reserved.
 //
 
-#import "TaskServerWantSemCreate.h"
-#import "TaskMessage.h"
-#import "SR+SRerwer.h"
+#import "AskTaskSemCheck.h"
 
-@implementation TaskServerWantSemCreate
+@implementation AskTaskSemCheck
 
--(instancetype)init{
+- (instancetype)init
+{
     self = [super init];
-    if(self ) {
-        [self addFilterForServerOnly];
-        [self addFilterForResponseType:MessageResponseAsk];
-        [self addFilterForMessageType:MessageMessageTypeSemCreate];
-        self.priority = 3;
+    if (self) {
+        [self addFilterForMessageType:MessageMessageTypeSemCheck];
     }
-    
     return self;
 }
 
 -(BOOL)processMessage:(TaskMessage *)msg{
     NSString* semName = msg.message.semOption.name;
     MessageBuilder* builder = [MessageBuilder builderWithMessage:msg.message];
-//    [builder setSemName:semName];
+    //    [builder setSemName:semName];
     if ([self.manager.sr.asSRerwer existSemaphore:semName]) {
         [builder setResponse:MessageResponseOk];
     } else {
@@ -38,6 +33,5 @@
     
     return NO;
 }
-
 
 @end
