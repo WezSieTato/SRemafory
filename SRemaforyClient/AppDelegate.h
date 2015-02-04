@@ -1,5 +1,5 @@
 //
-//  main.m
+//  AppDelegate.h
 //  SRemaforyClient
 //
 //  Created by Marcin Stepnowski on 04/02/15.
@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-int main(int argc, const char * argv[]) {
-    return NSApplicationMain(argc, argv);
-}
+@interface AppDelegate : NSObject <NSApplicationDelegate>
+
+
+@end
+

@@ -22,6 +22,7 @@
 -(instancetype)initWithIp:(NSString*)ip port:(NSString*)port andId:(NSNumber*)idNumber;
 
 -(BOOL)connect;
+-(void)disconnect;
 
 -(void)sendMessageFromBuilder:(MessageBuilder*)msgBuilder;
 -(void)sendMessage:(Message*)msg;

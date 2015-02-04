@@ -14,6 +14,7 @@
 //    NSLock* _tasksLock;
     NSLock* _messagesLock;
     NSCondition* _messageCondition;
+    BOOL _isWaiting;
     
     NSMutableArray* _incomingTasks;
     NSMutableArray* _outcomingTasks;
@@ -51,8 +52,11 @@
         unsigned long count = [_messages count];
         [_messagesLock unlock];
         
-        if(count == 0)
+        if(count == 0){
             [_messageCondition wait];
+            _isWaiting = YES;
+        }
+        _isWaiting = NO;
         
         [_messagesLock lock];
         NSArray* msgs = [_messages copy];
@@ -96,7 +100,10 @@
     [_messagesLock lock];
     [_messages addObject:message];
     [_messagesLock unlock];
-    [_messageCondition signal];
+//    if(_isWaiting){
+        [_messageCondition signal];
+        
+//    }
 }
 
 -(void)addTaskToQueue:(Task *)task{
