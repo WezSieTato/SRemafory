@@ -8,6 +8,8 @@
 
 #import "MessageBuilder+Addition.h"
 
+static int defaultIpIndex;
+
 @implementation MessageBuilder (Addition)
 
 +(instancetype)builderWithType:(MessageMessageType)type{
@@ -15,10 +17,14 @@
     [builder setType:type];
     
     MessageInfoBuilder* builderInfo = [MessageInfo builder];
-    [builderInfo setIpIndex:5];
+    [builderInfo setIpIndex:defaultIpIndex];
     [builder setInfo:[builderInfo build]];
     
     return builder;
+}
+
++(void)setDefaultIpIndex:(int)ip{
+    defaultIpIndex = ip;
 }
 
 -(void)setSemName:(NSString *)semName{

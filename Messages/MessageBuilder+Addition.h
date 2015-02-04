@@ -8,9 +8,11 @@
 
 #import "Message.pb.h"
 
+
 @interface MessageBuilder (Addition)
 
 +(instancetype)builderWithType:(MessageMessageType)type;
++(void)setDefaultIpIndex:(int)ip;
 
 -(void)setSemName:(NSString*)semName;
 -(void)setSemName:(NSString*)semName andSemValue:(SInt32)semValue;
