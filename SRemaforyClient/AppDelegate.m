@@ -21,7 +21,7 @@
     
     [MessageBuilder setDefaultIpIndex:12];
     
-    [_sr addServerMember:[[Member alloc] initWithIp:@"localhost" port:@"5555" andId:@11]];
+    [_sr addServerMember:[[Member alloc] initWithIp:@"localhost" port:@"5557" andId:@102]];
     [_sr setReceiverServerMessage:[[Receiver alloc] initWithPort:@"5556" andContext:[[ZMQContext alloc] initWithIOThreads:1]]];
     [_sr run];
 }

@@ -22,7 +22,7 @@
 }
 
 -(BOOL)processMessage:(TaskMessage *)msg{
-    NSLog(@"Laczymy sie po HB!");
+    NSLog(@"Laczymy sie po HB%@", [[msg.sender idNumber] stringValue]);
     [msg.sender connect];
     return NO;
 }

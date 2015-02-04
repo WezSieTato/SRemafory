@@ -13,6 +13,7 @@
 @interface TaskManager : NSObject
 
 @property (nonatomic, readonly) NSArray* tasks;
+@property (weak) SR* sr;
 
 -(void)addTask:(Task*)task;
 -(void)addTaskMessage:(TaskMessage*)message;

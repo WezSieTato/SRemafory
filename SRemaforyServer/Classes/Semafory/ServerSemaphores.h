@@ -7,6 +7,7 @@
 //
 
 #import "Semaphores.h"
+#import "ServerSemaphore.h"
 
 @interface ServerSemaphores : Semaphores
 

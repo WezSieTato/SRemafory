@@ -21,8 +21,13 @@
 
 @property (nonatomic, strong) TaskManager* taskManager;
 
+@property (nonatomic, readonly) NSUInteger countAliveServers;
+
 -(void)addClientMember:(Member*)member;
 -(void)addServerMember:(Member*)member;
+
+-(void)sendToAllServers:(Message*)msg;
+-(void)sendToAllServersMsgFrom:(MessageBuilder*)builder;
 
 -(void)run;
 

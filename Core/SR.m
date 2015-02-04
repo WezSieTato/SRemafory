@@ -29,6 +29,7 @@
         _servers = [NSMutableDictionary new];
         _taskManager = [TaskManager new];
         [_taskManager addTask:[TaskNewHB new]];
+        _taskManager.sr = self;
 
     }
     
@@ -55,6 +56,16 @@
     return [_servers copy];
 }
 
+-(NSUInteger)countAliveServers{
+    NSUInteger c = 0;
+    for (Member* mem in _servers) {
+        if(mem.isConnected)
+            ++c;
+    }
+    
+    return c;
+}
+
 -(void)addMember:(Member*)member toDictionary:(NSMutableDictionary*)dict{
     NSNumber* idNumber = member.idNumber;
     dict[idNumber] = member;
@@ -71,12 +82,24 @@
 
 -(void)setReceiverServerMessage:(Receiver *)receiverServerMessage{
     _receiverServerMessage = receiverServerMessage;
+    receiverServerMessage.serverMessagesReceiver = YES;
     receiverServerMessage.delegate = self;
 }
 
 -(void)setReceiverClientMessage:(Receiver *)receiverClientMessage{
     _receiverClientMessage = receiverClientMessage;
+    receiverClientMessage.serverMessagesReceiver = NO;
     receiverClientMessage.delegate = self;
+}
+
+-(void)sendToAllServers:(Message *)msg{
+    for (Member* mem in _servers) {
+        [mem sendMessage:msg];
+    }
+}
+
+-(void)sendToAllServersMsgFrom:(MessageBuilder *)builder{
+    [self sendToAllServers:[builder build]];
 }
 
 #pragma mark - Receive delegate

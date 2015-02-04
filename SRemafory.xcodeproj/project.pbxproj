@@ -41,11 +41,20 @@
 		D3B07E991A825EFA0050A49B /* MessageBuilder+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C56AE11A81172E001A6C7D /* MessageBuilder+Addition.m */; };
 		D3B07E9A1A825EFA0050A49B /* ZMQSocket+Message.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C56AE51A811F32001A6C7D /* ZMQSocket+Message.m */; };
 		D3B07EA01A82733A0050A49B /* TimeTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07E9F1A82733A0050A49B /* TimeTask.m */; };
-		D3B07EA41A8276000050A49B /* ServerSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EA31A8276000050A49B /* ServerSemaphore.m */; };
-		D3B07EA71A827D840050A49B /* AbstractSemafor.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EA61A827D840050A49B /* AbstractSemafor.m */; };
-		D3B07EAD1A82814F0050A49B /* Semaphores.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EAC1A82814F0050A49B /* Semaphores.m */; };
-		D3B07EB01A82837D0050A49B /* ServerSemaphores.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EAF1A82837D0050A49B /* ServerSemaphores.m */; };
-		D3B07EB31A8284180050A49B /* ForeignSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EB21A8284180050A49B /* ForeignSemaphore.m */; };
+		D3B07EC41A8286460050A49B /* AbstractSemafor.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EB91A8286460050A49B /* AbstractSemafor.m */; };
+		D3B07EC51A8286460050A49B /* ForeignSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EBB1A8286460050A49B /* ForeignSemaphore.m */; };
+		D3B07EC61A8286460050A49B /* ForeignSemaphores.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EBD1A8286460050A49B /* ForeignSemaphores.m */; };
+		D3B07EC71A8286460050A49B /* Semaphores.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EBF1A8286460050A49B /* Semaphores.m */; };
+		D3B07EC81A8286460050A49B /* ServerSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EC11A8286460050A49B /* ServerSemaphore.m */; };
+		D3B07EC91A8286460050A49B /* ServerSemaphores.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EC31A8286460050A49B /* ServerSemaphores.m */; };
+		D3B07ECC1A8286860050A49B /* SRerwer.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07ECB1A8286860050A49B /* SRerwer.m */; };
+		D3B07ED31A8296460050A49B /* ClientTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07ED21A8296460050A49B /* ClientTask.m */; };
+		D3B07ED61A8296740050A49B /* ClientSemCreateTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07ED51A8296740050A49B /* ClientSemCreateTask.m */; };
+		D3B07ED91A8299370050A49B /* SR+SRerwer.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07ED81A8299370050A49B /* SR+SRerwer.m */; };
+		D3B07EDC1A82A0BB0050A49B /* TaskWantSemCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EDB1A82A0BB0050A49B /* TaskWantSemCreate.m */; };
+		D3B07EDF1A82A9F00050A49B /* TaskServerWantSemCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EDE1A82A9F00050A49B /* TaskServerWantSemCreate.m */; };
+		D3B07EE31A82AE1E0050A49B /* SRient.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EE21A82AE1E0050A49B /* SRient.m */; };
+		D3B07EE61A82AE300050A49B /* SR+SRient.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EE51A82AE300050A49B /* SR+SRient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,16 +98,34 @@
 		D3B07E7C1A825E1D0050A49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3B07E9E1A82733A0050A49B /* TimeTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTask.h; sourceTree = "<group>"; };
 		D3B07E9F1A82733A0050A49B /* TimeTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTask.m; sourceTree = "<group>"; };
-		D3B07EA21A8276000050A49B /* ServerSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerSemaphore.h; sourceTree = "<group>"; };
-		D3B07EA31A8276000050A49B /* ServerSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerSemaphore.m; sourceTree = "<group>"; };
-		D3B07EA51A827D840050A49B /* AbstractSemafor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractSemafor.h; sourceTree = "<group>"; };
-		D3B07EA61A827D840050A49B /* AbstractSemafor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractSemafor.m; sourceTree = "<group>"; };
-		D3B07EAB1A82814F0050A49B /* Semaphores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Semaphores.h; sourceTree = "<group>"; };
-		D3B07EAC1A82814F0050A49B /* Semaphores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Semaphores.m; sourceTree = "<group>"; };
-		D3B07EAE1A82837D0050A49B /* ServerSemaphores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerSemaphores.h; sourceTree = "<group>"; };
-		D3B07EAF1A82837D0050A49B /* ServerSemaphores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerSemaphores.m; sourceTree = "<group>"; };
-		D3B07EB11A8284180050A49B /* ForeignSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForeignSemaphore.h; sourceTree = "<group>"; };
-		D3B07EB21A8284180050A49B /* ForeignSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForeignSemaphore.m; sourceTree = "<group>"; };
+		D3B07EB81A8286460050A49B /* AbstractSemafor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractSemafor.h; sourceTree = "<group>"; };
+		D3B07EB91A8286460050A49B /* AbstractSemafor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractSemafor.m; sourceTree = "<group>"; };
+		D3B07EBA1A8286460050A49B /* ForeignSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForeignSemaphore.h; sourceTree = "<group>"; };
+		D3B07EBB1A8286460050A49B /* ForeignSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForeignSemaphore.m; sourceTree = "<group>"; };
+		D3B07EBC1A8286460050A49B /* ForeignSemaphores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForeignSemaphores.h; sourceTree = "<group>"; };
+		D3B07EBD1A8286460050A49B /* ForeignSemaphores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForeignSemaphores.m; sourceTree = "<group>"; };
+		D3B07EBE1A8286460050A49B /* Semaphores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Semaphores.h; sourceTree = "<group>"; };
+		D3B07EBF1A8286460050A49B /* Semaphores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Semaphores.m; sourceTree = "<group>"; };
+		D3B07EC01A8286460050A49B /* ServerSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerSemaphore.h; sourceTree = "<group>"; };
+		D3B07EC11A8286460050A49B /* ServerSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerSemaphore.m; sourceTree = "<group>"; };
+		D3B07EC21A8286460050A49B /* ServerSemaphores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerSemaphores.h; sourceTree = "<group>"; };
+		D3B07EC31A8286460050A49B /* ServerSemaphores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerSemaphores.m; sourceTree = "<group>"; };
+		D3B07ECA1A8286860050A49B /* SRerwer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRerwer.h; sourceTree = "<group>"; };
+		D3B07ECB1A8286860050A49B /* SRerwer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRerwer.m; sourceTree = "<group>"; };
+		D3B07ED11A8296460050A49B /* ClientTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientTask.h; sourceTree = "<group>"; };
+		D3B07ED21A8296460050A49B /* ClientTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientTask.m; sourceTree = "<group>"; };
+		D3B07ED41A8296740050A49B /* ClientSemCreateTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientSemCreateTask.h; sourceTree = "<group>"; };
+		D3B07ED51A8296740050A49B /* ClientSemCreateTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientSemCreateTask.m; sourceTree = "<group>"; };
+		D3B07ED71A8299370050A49B /* SR+SRerwer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SR+SRerwer.h"; sourceTree = "<group>"; };
+		D3B07ED81A8299370050A49B /* SR+SRerwer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SR+SRerwer.m"; sourceTree = "<group>"; };
+		D3B07EDA1A82A0BB0050A49B /* TaskWantSemCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskWantSemCreate.h; sourceTree = "<group>"; };
+		D3B07EDB1A82A0BB0050A49B /* TaskWantSemCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskWantSemCreate.m; sourceTree = "<group>"; };
+		D3B07EDD1A82A9F00050A49B /* TaskServerWantSemCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskServerWantSemCreate.h; sourceTree = "<group>"; };
+		D3B07EDE1A82A9F00050A49B /* TaskServerWantSemCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskServerWantSemCreate.m; sourceTree = "<group>"; };
+		D3B07EE11A82AE1E0050A49B /* SRient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRient.h; sourceTree = "<group>"; };
+		D3B07EE21A82AE1E0050A49B /* SRient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRient.m; sourceTree = "<group>"; };
+		D3B07EE41A82AE300050A49B /* SR+SRient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SR+SRient.h"; sourceTree = "<group>"; };
+		D3B07EE51A82AE300050A49B /* SR+SRient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SR+SRient.m"; sourceTree = "<group>"; };
 		D3C56ADA1A81122E001A6C7D /* Message.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Message.proto; sourceTree = "<group>"; };
 		D3C56ADB1A81140C001A6C7D /* Message.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.pb.h; sourceTree = "<group>"; };
 		D3C56ADC1A81140C001A6C7D /* Message.pb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.pb.m; sourceTree = "<group>"; };
@@ -186,6 +213,7 @@
 		D3B07E6E1A825E1D0050A49B /* SRemaforyClient */ = {
 			isa = PBXGroup;
 			children = (
+				D3B07EE01A82AE0A0050A49B /* Classes */,
 				D3B07E711A825E1D0050A49B /* AppDelegate.h */,
 				D3B07E721A825E1D0050A49B /* AppDelegate.m */,
 				D3B07E761A825E1D0050A49B /* ViewController.h */,
@@ -209,16 +237,57 @@
 		D3B07EA11A82745C0050A49B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D3B07EA51A827D840050A49B /* AbstractSemafor.h */,
-				D3B07EA61A827D840050A49B /* AbstractSemafor.m */,
-				D3B07EA21A8276000050A49B /* ServerSemaphore.h */,
-				D3B07EA31A8276000050A49B /* ServerSemaphore.m */,
-				D3B07EAB1A82814F0050A49B /* Semaphores.h */,
-				D3B07EAC1A82814F0050A49B /* Semaphores.m */,
-				D3B07EAE1A82837D0050A49B /* ServerSemaphores.h */,
-				D3B07EAF1A82837D0050A49B /* ServerSemaphores.m */,
-				D3B07EB11A8284180050A49B /* ForeignSemaphore.h */,
-				D3B07EB21A8284180050A49B /* ForeignSemaphore.m */,
+				D3B07ED01A8296460050A49B /* Tasks */,
+				D3B07EB71A8286460050A49B /* Semafory */,
+				D3B07ECA1A8286860050A49B /* SRerwer.h */,
+				D3B07ECB1A8286860050A49B /* SRerwer.m */,
+				D3B07ED71A8299370050A49B /* SR+SRerwer.h */,
+				D3B07ED81A8299370050A49B /* SR+SRerwer.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D3B07EB71A8286460050A49B /* Semafory */ = {
+			isa = PBXGroup;
+			children = (
+				D3B07EB81A8286460050A49B /* AbstractSemafor.h */,
+				D3B07EB91A8286460050A49B /* AbstractSemafor.m */,
+				D3B07EBA1A8286460050A49B /* ForeignSemaphore.h */,
+				D3B07EBB1A8286460050A49B /* ForeignSemaphore.m */,
+				D3B07EBC1A8286460050A49B /* ForeignSemaphores.h */,
+				D3B07EBD1A8286460050A49B /* ForeignSemaphores.m */,
+				D3B07EBE1A8286460050A49B /* Semaphores.h */,
+				D3B07EBF1A8286460050A49B /* Semaphores.m */,
+				D3B07EC01A8286460050A49B /* ServerSemaphore.h */,
+				D3B07EC11A8286460050A49B /* ServerSemaphore.m */,
+				D3B07EC21A8286460050A49B /* ServerSemaphores.h */,
+				D3B07EC31A8286460050A49B /* ServerSemaphores.m */,
+			);
+			path = Semafory;
+			sourceTree = "<group>";
+		};
+		D3B07ED01A8296460050A49B /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				D3B07ED11A8296460050A49B /* ClientTask.h */,
+				D3B07ED21A8296460050A49B /* ClientTask.m */,
+				D3B07ED41A8296740050A49B /* ClientSemCreateTask.h */,
+				D3B07ED51A8296740050A49B /* ClientSemCreateTask.m */,
+				D3B07EDA1A82A0BB0050A49B /* TaskWantSemCreate.h */,
+				D3B07EDB1A82A0BB0050A49B /* TaskWantSemCreate.m */,
+				D3B07EDD1A82A9F00050A49B /* TaskServerWantSemCreate.h */,
+				D3B07EDE1A82A9F00050A49B /* TaskServerWantSemCreate.m */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		D3B07EE01A82AE0A0050A49B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D3B07EE11A82AE1E0050A49B /* SRient.h */,
+				D3B07EE21A82AE1E0050A49B /* SRient.m */,
+				D3B07EE41A82AE300050A49B /* SR+SRient.h */,
+				D3B07EE51A82AE300050A49B /* SR+SRient.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -452,23 +521,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				655CB3941A81B0E300FFF253 /* Receiver.m in Sources */,
+				D3B07EDC1A82A0BB0050A49B /* TaskWantSemCreate.m in Sources */,
 				655CB3911A81B0DE00FFF253 /* TaskMessage.m in Sources */,
 				655CB39A1A81B0E900FFF253 /* ZMQSocket+Message.m in Sources */,
+				D3B07EC61A8286460050A49B /* ForeignSemaphores.m in Sources */,
+				D3B07EC81A8286460050A49B /* ServerSemaphore.m in Sources */,
 				655CB3931A81B0E300FFF253 /* Member.m in Sources */,
-				D3B07EAD1A82814F0050A49B /* Semaphores.m in Sources */,
-				D3B07EB01A82837D0050A49B /* ServerSemaphores.m in Sources */,
+				D3B07ED61A8296740050A49B /* ClientSemCreateTask.m in Sources */,
 				655CB3991A81B0E900FFF253 /* MessageBuilder+Addition.m in Sources */,
+				D3B07EDF1A82A9F00050A49B /* TaskServerWantSemCreate.m in Sources */,
+				D3B07ED31A8296460050A49B /* ClientTask.m in Sources */,
+				D3B07ED91A8299370050A49B /* SR+SRerwer.m in Sources */,
 				655CB3921A81B0DE00FFF253 /* TaskGetHB.m in Sources */,
 				655CB3981A81B0E900FFF253 /* Message.pb.m in Sources */,
-				D3B07EA41A8276000050A49B /* ServerSemaphore.m in Sources */,
 				D3B07EA01A82733A0050A49B /* TimeTask.m in Sources */,
 				655CB3971A81B0E300FFF253 /* TaskManager.m in Sources */,
 				655CB3951A81B0E300FFF253 /* SR.m in Sources */,
 				655CB3781A81B03F00FFF253 /* main.m in Sources */,
 				655CB3761A81B03F00FFF253 /* AppDelegate.m in Sources */,
-				D3B07EA71A827D840050A49B /* AbstractSemafor.m in Sources */,
+				D3B07EC41A8286460050A49B /* AbstractSemafor.m in Sources */,
+				D3B07EC91A8286460050A49B /* ServerSemaphores.m in Sources */,
+				D3B07EC51A8286460050A49B /* ForeignSemaphore.m in Sources */,
 				655CB3961A81B0E300FFF253 /* Task.m in Sources */,
-				D3B07EB31A8284180050A49B /* ForeignSemaphore.m in Sources */,
+				D3B07ECC1A8286860050A49B /* SRerwer.m in Sources */,
+				D3B07EC71A8286460050A49B /* Semaphores.m in Sources */,
 				655CB3901A81B0D800FFF253 /* TaskNewHB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,9 +564,11 @@
 				D3B07E921A825EF30050A49B /* SR.m in Sources */,
 				D3B07E941A825EF30050A49B /* TaskManager.m in Sources */,
 				D3B07E981A825EFA0050A49B /* Message.pb.m in Sources */,
+				D3B07EE61A82AE300050A49B /* SR+SRient.m in Sources */,
 				D3B07E971A825EF30050A49B /* TaskGetHB.m in Sources */,
 				D3B07E901A825EF30050A49B /* Member.m in Sources */,
 				D3B07E961A825EF30050A49B /* TaskNewHB.m in Sources */,
+				D3B07EE31A82AE1E0050A49B /* SRient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,7 +40,8 @@
 -(BOOL)connect{
     
     NSString *endpoint = [NSString stringWithFormat: @"tcp://%@:%@", _ip, _port];
-    NSLog(@"Proba polaczenia!");
+    NSLog(@"Proba polaczenia! %@", [[self idNumber] stringValue]);
+    self.socket = [self.context socketWithType:ZMQ_PUSH];
     _conected = [self.socket connectToEndpoint:endpoint];
     if(_conected){
 
@@ -80,7 +81,7 @@
 
 -(void)resetTimer{
     GCDinvalidate(_timer);
-    GCDschedule(_timer, 30, self, @selector(sendHB));
+    GCDschedule(_timer, 20, self, @selector(sendHB));
 }
 
 -(void)sendHB{

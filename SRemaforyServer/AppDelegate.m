@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "SR.h"
+#import "SR+SRerwer.h"
 
 @interface AppDelegate ()
 
@@ -19,12 +19,20 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-    self.sr = [SR new];
+    self.sr = [SRerwer new];
     
-    [MessageBuilder setDefaultIpIndex:11];
+    [MessageBuilder setDefaultIpIndex:102];
     
-    [_sr addClientMember:[[Member alloc] initWithIp:@"localhost" port:@"5556" andId:@12]];
-    [_sr setReceiverClientMessage:[[Receiver alloc] initWithPort:@"5555" andContext:[[ZMQContext alloc] initWithIOThreads:1]]];
+    [_sr addClientMember:[[Member alloc] initWithIp:@"localhost" port:@"5556" andId:@12]]; //moj klient
+    
+    [_sr addServerMember:[[Member alloc] initWithIp:@"172.20.10.13" port:@"5555" andId:@100]]; // Bartek
+    [_sr addServerMember:[[Member alloc] initWithIp:@"172.20.10.3" port:@"5555" andId:@101]]; // Soppel
+//    [_sr addServerMember:[[Member alloc] initWithIp:@"172.20.10.14" port:@"5555" andId:@103]]; // Baryła
+
+
+    [_sr setReceiverClientMessage:[[Receiver alloc] initWithPort:@"5557" andContext:[[ZMQContext alloc] initWithIOThreads:1]]];
+    [_sr setReceiverServerMessage:[[Receiver alloc] initWithPort:@"5555" andContext:[[ZMQContext alloc] initWithIOThreads:1]]];
+
     [_sr run];
     
 }

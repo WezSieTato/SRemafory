@@ -10,6 +10,8 @@
 
 @interface Semaphores : NSMutableDictionary
 
+//@property (strong) NSMutableDictionary* map;
+
 -(BOOL)exist:(NSString*)name;
 -(BOOL)remove:(NSString*)name;
 -(BOOL)isFree:(NSString*)name;

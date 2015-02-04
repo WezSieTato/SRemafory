@@ -15,6 +15,10 @@
     BOOL _filterConnected;
     BOOL _isFilterConnectedMember;
     BOOL _outDated;
+    BOOL _filterClientOnly;
+    BOOL _filterServerOnly;
+    
+    NSMutableArray* _filteredResp;
 }
 
 @end
@@ -28,6 +32,9 @@
         _filterConnected = YES;
         _isFilterConnectedMember = NO;
         _outDated = NO;
+        _priority = 3;
+        
+        _filteredResp = [NSMutableArray new];
     }
     
     return self;
@@ -46,6 +53,15 @@
         return NO;
     
     if(_isFilterConnectedMember && msg.sender != _connectedMember)
+        return NO;
+    
+    if(_filterClientOnly && msg.fromServer)
+        return NO;
+    
+    if(_filterServerOnly && !msg.fromServer)
+        return NO;
+    
+    if(_filteredResp.count && ![_filteredResp containsObject:[NSNumber numberWithInt:msg.message.response]])
         return NO;
     
     return YES;
@@ -74,5 +90,18 @@
 -(void)addFilterForConnectedMember{
     _isFilterConnectedMember = YES;
 }
+
+-(void)addFilterForClientOnly{
+    _filterClientOnly = YES;
+}
+
+-(void)addFilterForServerOnly{
+    _filterServerOnly = YES;
+}
+
+-(void)addFilterForResponseType:(MessageResponse)response{
+    [_filteredResp addObject:[NSNumber numberWithInt:response]];
+}
+
 
 @end

@@ -36,5 +36,8 @@
 -(void)addFilterForMessageType:(MessageMessageType)type;
 -(void)addFilterForSenderConnection:(BOOL)isConnected;
 -(void)addFilterForConnectedMember;
+-(void)addFilterForClientOnly;
+-(void)addFilterForServerOnly;
+-(void)addFilterForResponseType:(MessageResponse)response;
 
 @end

@@ -26,7 +26,7 @@
 }
 
 -(BOOL)processMessage:(TaskMessage *)msg{
-    NSLog(@"Dostalim HB!");
+    NSLog(@"Dostalim HB! %@", [[self.connectedMember idNumber] stringValue]);
     [self resetTimer];
 
     return YES;
@@ -39,7 +39,7 @@
 }
 
 -(void)timeout{
-    NSLog(@"Nie bylo HB :(");
+    NSLog(@"Nie bylo HB :( %@", [[self.connectedMember idNumber] stringValue]);
     [self.connectedMember disconnect];
 }
 
