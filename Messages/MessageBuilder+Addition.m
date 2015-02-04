@@ -23,6 +23,28 @@ static int defaultIpIndex;
     return builder;
 }
 
++(instancetype)builderWithMessage:(Message *)msg{
+    MessageBuilder* builder = [Message builder];
+    [builder setType:msg.type];
+    
+    MessageInfoBuilder* builderInfo = [MessageInfo builder];
+    [builderInfo setIpIndex:defaultIpIndex];
+    if(msg.info.hasClient)
+        builderInfo.client = msg.info.client;
+    [builder setInfo:[builderInfo build]];
+    
+    if(msg.hasSemOption)
+       [builder setSemOption:msg.semOption];
+    
+    if(msg.hasResponse)
+        [builder setResponse:msg.response];
+    
+    if(msg.hasCheckBlock)
+        [builder setCheckBlock:msg.checkBlock];
+
+    return builder;
+}
+
 +(void)setDefaultIpIndex:(int)ip{
     defaultIpIndex = ip;
 }

@@ -8,9 +8,9 @@
 
 #import "AbstractSemafor.h"
 
-@interface Semaphores : NSMutableDictionary
+@interface Semaphores : NSObject
 
-//@property (strong) NSMutableDictionary* map;
+@property (strong) NSMutableDictionary* map;
 
 -(BOOL)exist:(NSString*)name;
 -(BOOL)remove:(NSString*)name;

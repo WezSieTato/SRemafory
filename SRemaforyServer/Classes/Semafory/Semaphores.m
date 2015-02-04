@@ -10,20 +10,29 @@
 
 @implementation Semaphores
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _map = [NSMutableDictionary new];
+    }
+    return self;
+}
+
 -(BOOL)exist:(NSString*)name{
-    return [[self allKeys] containsObject:name];
+    return [[self.map allKeys] containsObject:name];
 }
 
 -(BOOL)remove:(NSString*)name{
     if(![self exist:name])
         return NO;
-    [self removeObjectForKey:name];
+    [self.map removeObjectForKey:name];
     return YES;
 }
 
 -(BOOL)isFree:(NSString *)name
 {
-    return [(AbstractSemafor*)self[name] isFree];
+    return [(AbstractSemafor*)self.map[name] isFree];
 }
 
 @end

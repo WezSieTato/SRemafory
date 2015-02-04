@@ -13,6 +13,7 @@
 
 +(instancetype)builderWithType:(MessageMessageType)type;
 +(void)setDefaultIpIndex:(int)ip;
++(instancetype)builderWithMessage:(Message*)msg;
 
 -(void)setClientId:(SInt32)idNumber;
 -(void)setSemName:(NSString*)semName;

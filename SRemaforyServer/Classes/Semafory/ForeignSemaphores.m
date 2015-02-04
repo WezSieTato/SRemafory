@@ -14,7 +14,7 @@
     if([self exist:name])
         return NO;
     
-    self[name] = [[ForeignSemaphore alloc] initWithName:name andOwner:owner];
+    self.map[name] = [[ForeignSemaphore alloc] initWithName:name andOwner:owner];
     return YES;
 }
 

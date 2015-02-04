@@ -8,12 +8,15 @@
 
 #import "Task.h"
 #import "TaskManager.h"
+#import "SR.h"
 
 @interface Task (){
     BOOL _isFilterType;
     MessageMessageType _filterType;
     BOOL _filterConnected;
     BOOL _isFilterConnectedMember;
+    BOOL _isFilterConnectedClient;
+
     BOOL _outDated;
     BOOL _filterClientOnly;
     BOOL _filterServerOnly;
@@ -55,6 +58,10 @@
     if(_isFilterConnectedMember && msg.sender != _connectedMember)
         return NO;
     
+    if(_isFilterConnectedClient &&
+       [msg findClientInMembers:self.manager.sr.membersClients] != _connectedMember)
+        return NO;
+    
     if(_filterClientOnly && msg.fromServer)
         return NO;
     
@@ -89,6 +96,10 @@
 
 -(void)addFilterForConnectedMember{
     _isFilterConnectedMember = YES;
+}
+
+-(void)addFilterForConnectedClient{
+    _isFilterConnectedClient = YES;
 }
 
 -(void)addFilterForClientOnly{

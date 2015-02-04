@@ -10,4 +10,9 @@
 
 @implementation TaskMessage
 
+-(Member*)findClientInMembers:(NSDictionary *)array{
+
+    return array[[NSNumber numberWithInt:self.message.info.client]];
+}
+
 @end

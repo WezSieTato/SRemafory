@@ -20,6 +20,8 @@
         [self addFilterForMessageType:MessageMessageTypeSemCreate];
         [self addFilterForResponseType:MessageResponseOk];
         [self addFilterForResponseType:MessageResponseNo];
+        [self addFilterForConnectedClient];
+
     }
     
     return self;

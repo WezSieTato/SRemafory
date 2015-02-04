@@ -25,10 +25,9 @@
 }
 
 -(BOOL)processMessage:(TaskMessage *)msg{
-    
     NSString* semName = msg.message.semOption.name;
-    MessageBuilder* builder = [MessageBuilder builderWithType:MessageMessageTypeSemCreate];
-    [builder setSemName:semName];
+    MessageBuilder* builder = [MessageBuilder builderWithMessage:msg.message];
+//    [builder setSemName:semName];
     if ([self.manager.sr.asSRerwer existSemaphore:semName]) {
         [builder setResponse:MessageResponseOk];
     } else {

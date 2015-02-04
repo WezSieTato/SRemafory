@@ -16,4 +16,6 @@
 @property (getter=isFromServer) BOOL fromServer;
 @property (strong, nonatomic) Member* sender;
 
+-(Member*)findClientInMembers:(NSDictionary*)array;
+
 @end

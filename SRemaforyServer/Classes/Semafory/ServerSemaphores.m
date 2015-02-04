@@ -14,7 +14,7 @@
     if([self exist:name])
         return NO;
     
-    self[name] = [[ServerSemaphore alloc] initWithName:name andValue:value];
+    self.map[name] = [[ServerSemaphore alloc] initWithName:name andValue:value];
     return YES;
 }
 

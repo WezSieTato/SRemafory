@@ -25,7 +25,7 @@
     
     NSString* semName = msg.message.semOption.name;
     SRerwer* sr = self.manager.sr.asSRerwer;
-    MessageBuilder* builder = [MessageBuilder builderWithType:MessageMessageTypeSemCreate];
+    MessageBuilder* builder = [MessageBuilder builderWithMessage:msg.message];
 
     if([sr existSemaphore:semName]){
         [builder setResponse:MessageResponseError];
