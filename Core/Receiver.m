@@ -23,7 +23,7 @@
         self.context = context;
         NSString *endpoint = [NSString stringWithFormat: @"tcp://*:%@", port];
         self.socket = [context socketWithType:ZMQ_PULL];
-        [self.socket bindToEndpoint:endpoint];
+        bool succes =[self.socket bindToEndpoint:endpoint];
     }
     
     return self;

@@ -13,3 +13,8 @@ target 'SRemaforyClient' do
     pod 'ProtocolBuffers', '~> 1.9'
     pod "objc-zmq", :git => 'https://github.com/jeremy-w/objc-zmq.git'
 end
+
+target 'SRemaforyServer' do
+    pod 'ProtocolBuffers', '~> 1.9'
+    pod "objc-zmq", :git => 'https://github.com/jeremy-w/objc-zmq.git'
+end

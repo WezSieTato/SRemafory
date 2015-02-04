@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D3C5061BD052598E14FD39E /* libPods-SRemaforyClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF3F8166FEBE4EA9D9F27A4 /* libPods-SRemaforyClient.a */; };
+		2918D120754472130A01790A /* libPods-SRemaforyServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD608B62926DCAB566EDD62D /* libPods-SRemaforyServer.a */; };
 		655CB34F1A8173F600FFF253 /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C56AEA1A81491B001A6C7D /* Member.m */; };
 		655CB3521A817C3C00FFF253 /* Receiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3511A817C3C00FFF253 /* Receiver.m */; };
 		655CB3551A81832C00FFF253 /* SR.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3541A81832C00FFF253 /* SR.m */; };
@@ -23,6 +24,21 @@
 		655CB3671A81A04F00FFF253 /* TaskNewHB.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3651A81A04F00FFF253 /* TaskNewHB.m */; };
 		655CB36A1A81AAA100FFF253 /* TaskGetHB.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3691A81AAA000FFF253 /* TaskGetHB.m */; };
 		655CB36B1A81AAA100FFF253 /* TaskGetHB.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3691A81AAA000FFF253 /* TaskGetHB.m */; };
+		655CB3761A81B03F00FFF253 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3751A81B03F00FFF253 /* AppDelegate.m */; };
+		655CB3781A81B03F00FFF253 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3771A81B03F00FFF253 /* main.m */; };
+		655CB37A1A81B03F00FFF253 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655CB3791A81B03F00FFF253 /* Images.xcassets */; };
+		655CB37D1A81B03F00FFF253 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655CB37B1A81B03F00FFF253 /* MainMenu.xib */; };
+		655CB3901A81B0D800FFF253 /* TaskNewHB.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3651A81A04F00FFF253 /* TaskNewHB.m */; };
+		655CB3911A81B0DE00FFF253 /* TaskMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3611A818D4A00FFF253 /* TaskMessage.m */; };
+		655CB3921A81B0DE00FFF253 /* TaskGetHB.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3691A81AAA000FFF253 /* TaskGetHB.m */; };
+		655CB3931A81B0E300FFF253 /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C56AEA1A81491B001A6C7D /* Member.m */; };
+		655CB3941A81B0E300FFF253 /* Receiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3511A817C3C00FFF253 /* Receiver.m */; };
+		655CB3951A81B0E300FFF253 /* SR.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3541A81832C00FFF253 /* SR.m */; };
+		655CB3961A81B0E300FFF253 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3591A818D2E00FFF253 /* Task.m */; };
+		655CB3971A81B0E300FFF253 /* TaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB35D1A818D3D00FFF253 /* TaskManager.m */; };
+		655CB3981A81B0E900FFF253 /* Message.pb.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C56ADC1A81140C001A6C7D /* Message.pb.m */; };
+		655CB3991A81B0E900FFF253 /* MessageBuilder+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C56AE11A81172E001A6C7D /* MessageBuilder+Addition.m */; };
+		655CB39A1A81B0E900FFF253 /* ZMQSocket+Message.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C56AE51A811F32001A6C7D /* ZMQSocket+Message.m */; };
 		94258BBB8AAC68EC462CE687 /* libPods-SRemafory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8992BF8F08BEB74505BE9A2B /* libPods-SRemafory.a */; };
 		D3BFFE161A66A4D80031C45A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BFFE151A66A4D80031C45A /* main.m */; };
 		D3C56AD51A810F7A001A6C7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C56AD41A810F7A001A6C7D /* main.m */; };
@@ -73,8 +89,18 @@
 		655CB3651A81A04F00FFF253 /* TaskNewHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskNewHB.m; sourceTree = "<group>"; };
 		655CB3681A81AAA000FFF253 /* TaskGetHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskGetHB.h; sourceTree = "<group>"; };
 		655CB3691A81AAA000FFF253 /* TaskGetHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskGetHB.m; sourceTree = "<group>"; };
+		655CB3701A81B03F00FFF253 /* SRemaforyServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRemaforyServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		655CB3731A81B03F00FFF253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		655CB3741A81B03F00FFF253 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		655CB3751A81B03F00FFF253 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		655CB3771A81B03F00FFF253 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		655CB3791A81B03F00FFF253 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		655CB37C1A81B03F00FFF253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		80D2791664FDCD614674B959 /* Pods-SRemaforyServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRemaforyServer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SRemaforyServer/Pods-SRemaforyServer.debug.xcconfig"; sourceTree = "<group>"; };
+		82F6DF7A8F9E98D70A25CDB4 /* Pods-SRemaforyServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRemaforyServer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SRemaforyServer/Pods-SRemaforyServer.release.xcconfig"; sourceTree = "<group>"; };
 		8992BF8F08BEB74505BE9A2B /* libPods-SRemafory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SRemafory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAD88996FCCFD5436D2D737 /* Pods-SRemafory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRemafory.release.xcconfig"; path = "Pods/Target Support Files/Pods-SRemafory/Pods-SRemafory.release.xcconfig"; sourceTree = "<group>"; };
+		CE7EA3C32AEF38FCB5C4B9D7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D3BFFE121A66A4D80031C45A /* SRemafory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SRemafory; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3BFFE151A66A4D80031C45A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3C56AD21A810F7A001A6C7D /* SRemaforyClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SRemaforyClient; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,11 +114,22 @@
 		D3C56AE51A811F32001A6C7D /* ZMQSocket+Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZMQSocket+Message.m"; sourceTree = "<group>"; };
 		D3C56AE91A81491B001A6C7D /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
 		D3C56AEA1A81491B001A6C7D /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
+		DD608B62926DCAB566EDD62D /* libPods-SRemaforyServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SRemaforyServer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED68C776A579854B6E214642 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EF1A0C818D49697FA38459BC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C8437DA38A56012BFF22E5 /* Pods-SRemaforyClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRemaforyClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SRemaforyClient/Pods-SRemaforyClient.debug.xcconfig"; sourceTree = "<group>"; };
 		F2AC6350B0BBA07C50CECA1F /* Pods-SRemafory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRemafory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SRemafory/Pods-SRemafory.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		655CB36D1A81B03F00FFF253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2918D120754472130A01790A /* libPods-SRemaforyServer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D3BFFE0F1A66A4D80031C45A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -112,11 +149,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		655CB3711A81B03F00FFF253 /* SRemaforyServer */ = {
+			isa = PBXGroup;
+			children = (
+				655CB3741A81B03F00FFF253 /* AppDelegate.h */,
+				655CB3751A81B03F00FFF253 /* AppDelegate.m */,
+				655CB3791A81B03F00FFF253 /* Images.xcassets */,
+				655CB37B1A81B03F00FFF253 /* MainMenu.xib */,
+				655CB3721A81B03F00FFF253 /* Supporting Files */,
+			);
+			path = SRemaforyServer;
+			sourceTree = "<group>";
+		};
+		655CB3721A81B03F00FFF253 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				655CB3731A81B03F00FFF253 /* Info.plist */,
+				655CB3771A81B03F00FFF253 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6BC879DF333CA9E4D9CC08BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				8992BF8F08BEB74505BE9A2B /* libPods-SRemafory.a */,
 				0FF3F8166FEBE4EA9D9F27A4 /* libPods-SRemaforyClient.a */,
+				EF1A0C818D49697FA38459BC /* libPods.a */,
+				DD608B62926DCAB566EDD62D /* libPods-SRemaforyServer.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,6 +188,10 @@
 				BEAD88996FCCFD5436D2D737 /* Pods-SRemafory.release.xcconfig */,
 				F0C8437DA38A56012BFF22E5 /* Pods-SRemaforyClient.debug.xcconfig */,
 				34ECB28D7636C7ADCF96BEAD /* Pods-SRemaforyClient.release.xcconfig */,
+				CE7EA3C32AEF38FCB5C4B9D7 /* Pods.debug.xcconfig */,
+				ED68C776A579854B6E214642 /* Pods.release.xcconfig */,
+				80D2791664FDCD614674B959 /* Pods-SRemaforyServer.debug.xcconfig */,
+				82F6DF7A8F9E98D70A25CDB4 /* Pods-SRemaforyServer.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -139,6 +203,7 @@
 				D3C56AD91A81121E001A6C7D /* Messages */,
 				D3BFFE141A66A4D80031C45A /* SRemafory */,
 				D3C56AD31A810F7A001A6C7D /* SRemaforyClient */,
+				655CB3711A81B03F00FFF253 /* SRemaforyServer */,
 				D3BFFE131A66A4D80031C45A /* Products */,
 				816E9A4C4AA34A97B1AA71CE /* Pods */,
 				6BC879DF333CA9E4D9CC08BC /* Frameworks */,
@@ -150,6 +215,7 @@
 			children = (
 				D3BFFE121A66A4D80031C45A /* SRemafory */,
 				D3C56AD21A810F7A001A6C7D /* SRemaforyClient */,
+				655CB3701A81B03F00FFF253 /* SRemaforyServer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,6 +276,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		655CB36F1A81B03F00FFF253 /* SRemaforyServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 655CB38A1A81B03F00FFF253 /* Build configuration list for PBXNativeTarget "SRemaforyServer" */;
+			buildPhases = (
+				B595B064B2A2E6E0912B16F4 /* Check Pods Manifest.lock */,
+				655CB36C1A81B03F00FFF253 /* Sources */,
+				655CB36D1A81B03F00FFF253 /* Frameworks */,
+				655CB36E1A81B03F00FFF253 /* Resources */,
+				8123837CF4CA689819BFC958 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SRemaforyServer;
+			productName = SRemaforyServer;
+			productReference = 655CB3701A81B03F00FFF253 /* SRemaforyServer.app */;
+			productType = "com.apple.product-type.application";
+		};
 		D3BFFE111A66A4D80031C45A /* SRemafory */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3BFFE191A66A4D80031C45A /* Build configuration list for PBXNativeTarget "SRemafory" */;
@@ -257,6 +342,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = siema;
 				TargetAttributes = {
+					655CB36F1A81B03F00FFF253 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					D3BFFE111A66A4D80031C45A = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -271,6 +359,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D3BFFE091A66A4D80031C45A;
 			productRefGroup = D3BFFE131A66A4D80031C45A /* Products */;
@@ -279,9 +368,22 @@
 			targets = (
 				D3BFFE111A66A4D80031C45A /* SRemafory */,
 				D3C56AD11A810F7A001A6C7D /* SRemaforyClient */,
+				655CB36F1A81B03F00FFF253 /* SRemaforyServer */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		655CB36E1A81B03F00FFF253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				655CB37A1A81B03F00FFF253 /* Images.xcassets in Resources */,
+				655CB37D1A81B03F00FFF253 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		31A6E5D19FEA12FD8E831C2C /* Copy Pods Resources */ = {
@@ -329,6 +431,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		8123837CF4CA689819BFC958 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SRemaforyServer/Pods-SRemaforyServer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B595B064B2A2E6E0912B16F4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		DDA2078D132FDD3A7BA25D81 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,6 +479,26 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		655CB36C1A81B03F00FFF253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				655CB3941A81B0E300FFF253 /* Receiver.m in Sources */,
+				655CB3911A81B0DE00FFF253 /* TaskMessage.m in Sources */,
+				655CB39A1A81B0E900FFF253 /* ZMQSocket+Message.m in Sources */,
+				655CB3931A81B0E300FFF253 /* Member.m in Sources */,
+				655CB3991A81B0E900FFF253 /* MessageBuilder+Addition.m in Sources */,
+				655CB3921A81B0DE00FFF253 /* TaskGetHB.m in Sources */,
+				655CB3981A81B0E900FFF253 /* Message.pb.m in Sources */,
+				655CB3971A81B0E300FFF253 /* TaskManager.m in Sources */,
+				655CB3951A81B0E300FFF253 /* SR.m in Sources */,
+				655CB3781A81B03F00FFF253 /* main.m in Sources */,
+				655CB3761A81B03F00FFF253 /* AppDelegate.m in Sources */,
+				655CB3961A81B0E300FFF253 /* Task.m in Sources */,
+				655CB3901A81B0D800FFF253 /* TaskNewHB.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D3BFFE0E1A66A4D80031C45A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,7 +539,48 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		655CB37B1A81B03F00FFF253 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				655CB37C1A81B03F00FFF253 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		655CB38B1A81B03F00FFF253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80D2791664FDCD614674B959 /* Pods-SRemaforyServer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SRemaforyServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		655CB38C1A81B03F00FFF253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82F6DF7A8F9E98D70A25CDB4 /* Pods-SRemaforyServer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SRemaforyServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D3BFFE171A66A4D80031C45A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -501,6 +694,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		655CB38A1A81B03F00FFF253 /* Build configuration list for PBXNativeTarget "SRemaforyServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				655CB38B1A81B03F00FFF253 /* Debug */,
+				655CB38C1A81B03F00FFF253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D3BFFE0D1A66A4D80031C45A /* Build configuration list for PBXProject "SRemafory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
