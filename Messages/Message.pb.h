@@ -40,6 +40,7 @@ typedef NS_ENUM(SInt32, MessageResponse) {
   MessageResponseOk = 0,
   MessageResponseNo = 1,
   MessageResponseError = 2,
+  MessageResponseAsk = 3,
 };
 
 BOOL MessageResponseIsValidValue(MessageResponse value);
@@ -96,10 +97,14 @@ BOOL MessageResponseIsValidValue(MessageResponse value);
 @interface MessageInfo : PBGeneratedMessage {
 @private
   BOOL hasIpIndex_:1;
+  BOOL hasClient_:1;
   SInt32 ipIndex;
+  SInt32 client;
 }
 - (BOOL) hasIpIndex;
+- (BOOL) hasClient;
 @property (readonly) SInt32 ipIndex;
+@property (readonly) SInt32 client;
 
 + (instancetype) defaultInstance;
 - (instancetype) defaultInstance;
@@ -140,6 +145,11 @@ BOOL MessageResponseIsValidValue(MessageResponse value);
 - (SInt32) ipIndex;
 - (MessageInfoBuilder*) setIpIndex:(SInt32) value;
 - (MessageInfoBuilder*) clearIpIndex;
+
+- (BOOL) hasClient;
+- (SInt32) client;
+- (MessageInfoBuilder*) setClient:(SInt32) value;
+- (MessageInfoBuilder*) clearClient;
 @end
 
 @interface MessageSemOptions : PBGeneratedMessage {

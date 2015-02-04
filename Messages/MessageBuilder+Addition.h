@@ -14,6 +14,7 @@
 +(instancetype)builderWithType:(MessageMessageType)type;
 +(void)setDefaultIpIndex:(int)ip;
 
+-(void)setClientId:(SInt32)idNumber;
 -(void)setSemName:(NSString*)semName;
 -(void)setSemName:(NSString*)semName andSemValue:(SInt32)semValue;
 -(void)setCheckBlockWithInit:(SInt32)init sending:(SInt32)sending andSem:(NSString*)sem;

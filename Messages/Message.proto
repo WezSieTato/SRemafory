@@ -19,10 +19,12 @@ message Message{
         OK = 0;
         NO = 1;
         ERROR = 2;
+        ASK = 3;
     }
 
     message Info{
         required int32 ipIndex = 1;
+        optional int32 client = 2;
     }
 
     message SemOptions{
@@ -34,6 +36,6 @@ message Message{
     message CheckBlock{
         required int32 initClient = 1;
         required int32 sendingClient = 2;
-    required string targetSem = 3;
+        required string targetSem = 3;
     }
 }

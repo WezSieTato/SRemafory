@@ -272,6 +272,7 @@ BOOL MessageResponseIsValidValue(MessageResponse value) {
     case MessageResponseOk:
     case MessageResponseNo:
     case MessageResponseError:
+    case MessageResponseAsk:
       return YES;
     default:
       return NO;
@@ -279,6 +280,7 @@ BOOL MessageResponseIsValidValue(MessageResponse value) {
 }
 @interface MessageInfo ()
 @property SInt32 ipIndex;
+@property SInt32 client;
 @end
 
 @implementation MessageInfo
@@ -290,9 +292,17 @@ BOOL MessageResponseIsValidValue(MessageResponse value) {
   hasIpIndex_ = !!value_;
 }
 @synthesize ipIndex;
+- (BOOL) hasClient {
+  return !!hasClient_;
+}
+- (void) setHasClient:(BOOL) value_ {
+  hasClient_ = !!value_;
+}
+@synthesize client;
 - (instancetype) init {
   if ((self = [super init])) {
     self.ipIndex = 0;
+    self.client = 0;
   }
   return self;
 }
@@ -318,6 +328,9 @@ static MessageInfo* defaultMessageInfoInstance = nil;
   if (self.hasIpIndex) {
     [output writeInt32:1 value:self.ipIndex];
   }
+  if (self.hasClient) {
+    [output writeInt32:2 value:self.client];
+  }
   [self.unknownFields writeToCodedOutputStream:output];
 }
 - (SInt32) serializedSize {
@@ -329,6 +342,9 @@ static MessageInfo* defaultMessageInfoInstance = nil;
   size_ = 0;
   if (self.hasIpIndex) {
     size_ += computeInt32Size(1, self.ipIndex);
+  }
+  if (self.hasClient) {
+    size_ += computeInt32Size(2, self.client);
   }
   size_ += self.unknownFields.serializedSize;
   memoizedSerializedSize = size_;
@@ -368,6 +384,9 @@ static MessageInfo* defaultMessageInfoInstance = nil;
   if (self.hasIpIndex) {
     [output appendFormat:@"%@%@: %@\n", indent, @"ipIndex", [NSNumber numberWithInteger:self.ipIndex]];
   }
+  if (self.hasClient) {
+    [output appendFormat:@"%@%@: %@\n", indent, @"client", [NSNumber numberWithInteger:self.client]];
+  }
   [self.unknownFields writeDescriptionTo:output withIndent:indent];
 }
 - (BOOL) isEqual:(id)other {
@@ -381,12 +400,17 @@ static MessageInfo* defaultMessageInfoInstance = nil;
   return
       self.hasIpIndex == otherMessage.hasIpIndex &&
       (!self.hasIpIndex || self.ipIndex == otherMessage.ipIndex) &&
+      self.hasClient == otherMessage.hasClient &&
+      (!self.hasClient || self.client == otherMessage.client) &&
       (self.unknownFields == otherMessage.unknownFields || (self.unknownFields != nil && [self.unknownFields isEqual:otherMessage.unknownFields]));
 }
 - (NSUInteger) hash {
   __block NSUInteger hashCode = 7;
   if (self.hasIpIndex) {
     hashCode = hashCode * 31 + [[NSNumber numberWithInteger:self.ipIndex] hash];
+  }
+  if (self.hasClient) {
+    hashCode = hashCode * 31 + [[NSNumber numberWithInteger:self.client] hash];
   }
   hashCode = hashCode * 31 + [self.unknownFields hash];
   return hashCode;
@@ -434,6 +458,9 @@ static MessageInfo* defaultMessageInfoInstance = nil;
   if (other.hasIpIndex) {
     [self setIpIndex:other.ipIndex];
   }
+  if (other.hasClient) {
+    [self setClient:other.client];
+  }
   [self mergeUnknownFields:other.unknownFields];
   return self;
 }
@@ -459,6 +486,10 @@ static MessageInfo* defaultMessageInfoInstance = nil;
         [self setIpIndex:[input readInt32]];
         break;
       }
+      case 16: {
+        [self setClient:[input readInt32]];
+        break;
+      }
     }
   }
 }
@@ -476,6 +507,22 @@ static MessageInfo* defaultMessageInfoInstance = nil;
 - (MessageInfoBuilder*) clearIpIndex {
   resultInfo.hasIpIndex = NO;
   resultInfo.ipIndex = 0;
+  return self;
+}
+- (BOOL) hasClient {
+  return resultInfo.hasClient;
+}
+- (SInt32) client {
+  return resultInfo.client;
+}
+- (MessageInfoBuilder*) setClient:(SInt32) value {
+  resultInfo.hasClient = YES;
+  resultInfo.client = value;
+  return self;
+}
+- (MessageInfoBuilder*) clearClient {
+  resultInfo.hasClient = NO;
+  resultInfo.client = 0;
   return self;
 }
 @end

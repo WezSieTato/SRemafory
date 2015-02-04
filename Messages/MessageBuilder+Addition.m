@@ -27,6 +27,14 @@ static int defaultIpIndex;
     defaultIpIndex = ip;
 }
 
+-(void)setClientId:(SInt32)idNumber{
+    MessageInfoBuilder* builderInfo = [MessageInfo builder];
+    [builderInfo setIpIndex:defaultIpIndex];
+    [builderInfo setClient:idNumber];
+    
+    [self setInfo:[builderInfo build]]; 
+}
+
 -(void)setSemName:(NSString *)semName{
     [self setSemName:semName andSemValue:0];
 }
