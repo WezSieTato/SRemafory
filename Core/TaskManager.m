@@ -52,6 +52,8 @@
         unsigned long count = [_messages count];
         [_messagesLock unlock];
         
+        count += _incomingTasks.count + _outcomingTasks.count;
+        
         if(count == 0){
             [_messageCondition wait];
             _isWaiting = YES;
