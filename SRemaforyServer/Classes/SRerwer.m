@@ -11,6 +11,12 @@
 #import "ClientSemCreateTask.h"
 #import "AskTaskSemCheck.h"
 #import "ClientSemCheckTask.h"
+#import "AskTaskSemP.h"
+#import "ClientSemPTask.h"
+#import "AskTaskSemV.h"
+#import "ClientSemVTask.h"
+#import "AskTaskSemDestroy.h"
+#import "ClientSemDestroyTask.h"
 
 @implementation SRerwer
 
@@ -25,6 +31,15 @@
         
         [self.taskManager addTask: [AskTaskSemCheck new]];
         [self.taskManager addTask: [ClientSemCheckTask new]];
+        
+        [self.taskManager addTask: [AskTaskSemP new]];
+        [self.taskManager addTask: [ClientSemPTask new]];
+        
+        [self.taskManager addTask: [AskTaskSemV new]];
+        [self.taskManager addTask: [ClientSemVTask new]];
+        
+        [self.taskManager addTask: [AskTaskSemDestroy new]];
+        [self.taskManager addTask: [ClientSemDestroyTask new]];
         
     }
     

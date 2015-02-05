@@ -16,9 +16,15 @@
 		65588B171A82E46200CCCDF7 /* AskTaskSemCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B111A82E46200CCCDF7 /* AskTaskSemCreate.m */; };
 		65588B181A82E46200CCCDF7 /* TaskWantSemCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B131A82E46200CCCDF7 /* TaskWantSemCreate.m */; };
 		65588B1B1A82E4B500CCCDF7 /* AskTaskSemCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B1A1A82E4B500CCCDF7 /* AskTaskSemCheck.m */; };
-		65588B1F1A82E62500CCCDF7 /* ClienkSemPTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B1E1A82E62500CCCDF7 /* ClienkSemPTask.m */; };
 		65588B221A82E81500CCCDF7 /* AskTaskSemP.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B211A82E81500CCCDF7 /* AskTaskSemP.m */; };
 		65588B251A82E97D00CCCDF7 /* TaskWantSemP.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B241A82E97C00CCCDF7 /* TaskWantSemP.m */; };
+		65588B2D1A82F0B700CCCDF7 /* AskTaskSemV.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B281A82F0B700CCCDF7 /* AskTaskSemV.m */; };
+		65588B2E1A82F0B700CCCDF7 /* ClientSemVTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B291A82F0B700CCCDF7 /* ClientSemVTask.m */; };
+		65588B2F1A82F0B700CCCDF7 /* TaskWantSemV.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B2C1A82F0B700CCCDF7 /* TaskWantSemV.m */; };
+		65588B311A82F24900CCCDF7 /* ClienkSemPTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B301A82F24900CCCDF7 /* ClienkSemPTask.m */; };
+		65588B391A82F4EB00CCCDF7 /* AskTaskSemDestroy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B341A82F4EB00CCCDF7 /* AskTaskSemDestroy.m */; };
+		65588B3A1A82F4EB00CCCDF7 /* ClientSemDestroyTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B361A82F4EB00CCCDF7 /* ClientSemDestroyTask.m */; };
+		65588B3B1A82F4EB00CCCDF7 /* TaskWantSemDestroy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65588B381A82F4EB00CCCDF7 /* TaskWantSemDestroy.m */; };
 		655CB3761A81B03F00FFF253 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3751A81B03F00FFF253 /* AppDelegate.m */; };
 		655CB3781A81B03F00FFF253 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CB3771A81B03F00FFF253 /* main.m */; };
 		655CB37A1A81B03F00FFF253 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655CB3791A81B03F00FFF253 /* Images.xcassets */; };
@@ -84,12 +90,24 @@
 		65588B131A82E46200CCCDF7 /* TaskWantSemCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskWantSemCreate.m; sourceTree = "<group>"; };
 		65588B191A82E4B500CCCDF7 /* AskTaskSemCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskTaskSemCheck.h; sourceTree = "<group>"; };
 		65588B1A1A82E4B500CCCDF7 /* AskTaskSemCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskTaskSemCheck.m; sourceTree = "<group>"; };
-		65588B1D1A82E62500CCCDF7 /* ClienkSemPTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClienkSemPTask.h; sourceTree = "<group>"; };
-		65588B1E1A82E62500CCCDF7 /* ClienkSemPTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClienkSemPTask.m; sourceTree = "<group>"; };
+		65588B1D1A82E62500CCCDF7 /* ClientSemPTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientSemPTask.h; sourceTree = "<group>"; };
 		65588B201A82E81500CCCDF7 /* AskTaskSemP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskTaskSemP.h; sourceTree = "<group>"; };
 		65588B211A82E81500CCCDF7 /* AskTaskSemP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskTaskSemP.m; sourceTree = "<group>"; };
 		65588B231A82E97C00CCCDF7 /* TaskWantSemP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskWantSemP.h; sourceTree = "<group>"; };
 		65588B241A82E97C00CCCDF7 /* TaskWantSemP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskWantSemP.m; sourceTree = "<group>"; };
+		65588B271A82F0B700CCCDF7 /* AskTaskSemV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskTaskSemV.h; sourceTree = "<group>"; };
+		65588B281A82F0B700CCCDF7 /* AskTaskSemV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskTaskSemV.m; sourceTree = "<group>"; };
+		65588B291A82F0B700CCCDF7 /* ClientSemVTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientSemVTask.m; sourceTree = "<group>"; };
+		65588B2A1A82F0B700CCCDF7 /* ClientSemVTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientSemVTask.h; sourceTree = "<group>"; };
+		65588B2B1A82F0B700CCCDF7 /* TaskWantSemV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskWantSemV.h; sourceTree = "<group>"; };
+		65588B2C1A82F0B700CCCDF7 /* TaskWantSemV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskWantSemV.m; sourceTree = "<group>"; };
+		65588B301A82F24900CCCDF7 /* ClienkSemPTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClienkSemPTask.m; sourceTree = "<group>"; };
+		65588B331A82F4EB00CCCDF7 /* AskTaskSemDestroy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskTaskSemDestroy.h; sourceTree = "<group>"; };
+		65588B341A82F4EB00CCCDF7 /* AskTaskSemDestroy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskTaskSemDestroy.m; sourceTree = "<group>"; };
+		65588B351A82F4EB00CCCDF7 /* ClientSemDestroyTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientSemDestroyTask.h; sourceTree = "<group>"; };
+		65588B361A82F4EB00CCCDF7 /* ClientSemDestroyTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientSemDestroyTask.m; sourceTree = "<group>"; };
+		65588B371A82F4EB00CCCDF7 /* TaskWantSemDestroy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskWantSemDestroy.h; sourceTree = "<group>"; };
+		65588B381A82F4EB00CCCDF7 /* TaskWantSemDestroy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskWantSemDestroy.m; sourceTree = "<group>"; };
 		655CB3501A817C3C00FFF253 /* Receiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Receiver.h; sourceTree = "<group>"; };
 		655CB3511A817C3C00FFF253 /* Receiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Receiver.m; sourceTree = "<group>"; };
 		655CB3531A81832C00FFF253 /* SR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SR.h; sourceTree = "<group>"; };
@@ -215,14 +233,40 @@
 		65588B1C1A82E60800CCCDF7 /* SemP */ = {
 			isa = PBXGroup;
 			children = (
-				65588B1D1A82E62500CCCDF7 /* ClienkSemPTask.h */,
-				65588B1E1A82E62500CCCDF7 /* ClienkSemPTask.m */,
+				65588B1D1A82E62500CCCDF7 /* ClientSemPTask.h */,
+				65588B301A82F24900CCCDF7 /* ClienkSemPTask.m */,
 				65588B201A82E81500CCCDF7 /* AskTaskSemP.h */,
 				65588B211A82E81500CCCDF7 /* AskTaskSemP.m */,
 				65588B231A82E97C00CCCDF7 /* TaskWantSemP.h */,
 				65588B241A82E97C00CCCDF7 /* TaskWantSemP.m */,
 			);
 			path = SemP;
+			sourceTree = "<group>";
+		};
+		65588B261A82F0B700CCCDF7 /* SemV */ = {
+			isa = PBXGroup;
+			children = (
+				65588B271A82F0B700CCCDF7 /* AskTaskSemV.h */,
+				65588B281A82F0B700CCCDF7 /* AskTaskSemV.m */,
+				65588B2A1A82F0B700CCCDF7 /* ClientSemVTask.h */,
+				65588B291A82F0B700CCCDF7 /* ClientSemVTask.m */,
+				65588B2B1A82F0B700CCCDF7 /* TaskWantSemV.h */,
+				65588B2C1A82F0B700CCCDF7 /* TaskWantSemV.m */,
+			);
+			path = SemV;
+			sourceTree = "<group>";
+		};
+		65588B321A82F4EB00CCCDF7 /* SemDestroy */ = {
+			isa = PBXGroup;
+			children = (
+				65588B331A82F4EB00CCCDF7 /* AskTaskSemDestroy.h */,
+				65588B341A82F4EB00CCCDF7 /* AskTaskSemDestroy.m */,
+				65588B351A82F4EB00CCCDF7 /* ClientSemDestroyTask.h */,
+				65588B361A82F4EB00CCCDF7 /* ClientSemDestroyTask.m */,
+				65588B371A82F4EB00CCCDF7 /* TaskWantSemDestroy.h */,
+				65588B381A82F4EB00CCCDF7 /* TaskWantSemDestroy.m */,
+			);
+			path = SemDestroy;
 			sourceTree = "<group>";
 		};
 		655CB3711A81B03F00FFF253 /* SRemaforyServer */ = {
@@ -332,6 +376,8 @@
 		D3B07ED01A8296460050A49B /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				65588B321A82F4EB00CCCDF7 /* SemDestroy */,
+				65588B261A82F0B700CCCDF7 /* SemV */,
 				65588B1C1A82E60800CCCDF7 /* SemP */,
 				65588B081A82E46200CCCDF7 /* SemCheck */,
 				65588B0D1A82E46200CCCDF7 /* SemCreate */,
@@ -588,14 +634,17 @@
 				655CB3911A81B0DE00FFF253 /* TaskMessage.m in Sources */,
 				655CB39A1A81B0E900FFF253 /* ZMQSocket+Message.m in Sources */,
 				D3B07EC61A8286460050A49B /* ForeignSemaphores.m in Sources */,
+				65588B311A82F24900CCCDF7 /* ClienkSemPTask.m in Sources */,
 				D3B07EC81A8286460050A49B /* ServerSemaphore.m in Sources */,
 				65588B1B1A82E4B500CCCDF7 /* AskTaskSemCheck.m in Sources */,
 				65588B221A82E81500CCCDF7 /* AskTaskSemP.m in Sources */,
 				65588B041A82E1A100CCCDF7 /* TaskSemVote.m in Sources */,
 				655CB3931A81B0E300FFF253 /* Member.m in Sources */,
 				65588B251A82E97D00CCCDF7 /* TaskWantSemP.m in Sources */,
+				65588B391A82F4EB00CCCDF7 /* AskTaskSemDestroy.m in Sources */,
 				655CB3991A81B0E900FFF253 /* MessageBuilder+Addition.m in Sources */,
-				65588B1F1A82E62500CCCDF7 /* ClienkSemPTask.m in Sources */,
+				65588B2D1A82F0B700CCCDF7 /* AskTaskSemV.m in Sources */,
+				65588B2E1A82F0B700CCCDF7 /* ClientSemVTask.m in Sources */,
 				D3B07ED31A8296460050A49B /* ClientTask.m in Sources */,
 				D3B07ED91A8299370050A49B /* SR+SRerwer.m in Sources */,
 				655CB3921A81B0DE00FFF253 /* TaskGetHB.m in Sources */,
@@ -606,6 +655,7 @@
 				655CB3971A81B0E300FFF253 /* TaskManager.m in Sources */,
 				65588B181A82E46200CCCDF7 /* TaskWantSemCreate.m in Sources */,
 				655CB3951A81B0E300FFF253 /* SR.m in Sources */,
+				65588B2F1A82F0B700CCCDF7 /* TaskWantSemV.m in Sources */,
 				655CB3781A81B03F00FFF253 /* main.m in Sources */,
 				65588B151A82E46200CCCDF7 /* TaskWantSemCheck.m in Sources */,
 				655CB3761A81B03F00FFF253 /* AppDelegate.m in Sources */,
@@ -614,6 +664,8 @@
 				65588B141A82E46200CCCDF7 /* ClientSemCheckTask.m in Sources */,
 				D3B07EC51A8286460050A49B /* ForeignSemaphore.m in Sources */,
 				65588B161A82E46200CCCDF7 /* ClientSemCreateTask.m in Sources */,
+				65588B3A1A82F4EB00CCCDF7 /* ClientSemDestroyTask.m in Sources */,
+				65588B3B1A82F4EB00CCCDF7 /* TaskWantSemDestroy.m in Sources */,
 				655CB3961A81B0E300FFF253 /* Task.m in Sources */,
 				D3B07ECC1A8286860050A49B /* SRerwer.m in Sources */,
 				D3B07EC71A8286460050A49B /* Semaphores.m in Sources */,

@@ -6,16 +6,16 @@
 //  Copyright (c) 2015 siema. All rights reserved.
 //
 
-#import "ClientSemPTask.h"
-#import "TaskWantSemP.h"
+#import "ClientSemVTask.h"
+#import "TaskWantSemV.h"
 
-@implementation ClientSemPTask
+@implementation ClientSemVTask
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        [self addFilterForMessageType:MessageMessageTypeSemP];
+        [self addFilterForMessageType:MessageMessageTypeSemV];
     }
     return self;
 }
@@ -28,17 +28,14 @@
     
     if([sr existSemaphore:name]){
         ServerSemaphore* sem = sr.serverSemaphores.map[name];
-        BOOL p = [sem pByMember:mem];
-        if(p){
+        BOOL v = [sem vByMember:mem];
+        if(v){
             builder.response = MessageResponseOk;
             [msg.sender sendMessageFromBuilder:builder];
         }else{
             builder.response = MessageResponseNo;
             [msg.sender sendMessageFromBuilder:builder];
             
-            /**
-             *  Odpalic algorytm
-             */
         }
         
     } else {
@@ -51,7 +48,7 @@
             [sr sendToAllServersMsgFrom:builder];
             
             //TASK!!!!!!!
-            TaskWantSemP* task = [TaskWantSemP new];
+            TaskWantSemV* task = [TaskWantSemV new];
             task.connectedMember = msg.sender;
             task.semOpt = msg.message.semOption;
             [self.manager addTaskToQueue:task];

@@ -6,16 +6,16 @@
 //  Copyright (c) 2015 siema. All rights reserved.
 //
 
-#import "ClientSemPTask.h"
-#import "TaskWantSemP.h"
+#import "ClientSemDestroyTask.h"
+#import "TaskWantSemDestroy.h"
 
-@implementation ClientSemPTask
+@implementation ClientSemDestroyTask
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        [self addFilterForMessageType:MessageMessageTypeSemP];
+        [self addFilterForMessageType:MessageMessageTypeSemDestroy];
     }
     return self;
 }
@@ -24,22 +24,18 @@
     SRerwer *sr = self.manager.sr.asSRerwer;
     NSString* name = msg.message.semOption.name;
     MessageBuilder* builder = [MessageBuilder builderWithMessage:msg.message];
-    Member* mem = msg.sender;
     
     if([sr existSemaphore:name]){
         ServerSemaphore* sem = sr.serverSemaphores.map[name];
-        BOOL p = [sem pByMember:mem];
-        if(p){
+        BOOL free = [sem isFree];
+        if(free){
+            [sr.serverSemaphores remove:name];
             builder.response = MessageResponseOk;
-            [msg.sender sendMessageFromBuilder:builder];
         }else{
-            builder.response = MessageResponseNo;
-            [msg.sender sendMessageFromBuilder:builder];
-            
-            /**
-             *  Odpalic algorytm
-             */
+            builder.response = MessageResponseError;
         }
+        [msg.sender sendMessageFromBuilder:builder];
+
         
     } else {
         if(![sr countAliveServers]){
@@ -51,7 +47,7 @@
             [sr sendToAllServersMsgFrom:builder];
             
             //TASK!!!!!!!
-            TaskWantSemP* task = [TaskWantSemP new];
+            TaskWantSemDestroy *task = [TaskWantSemDestroy new];
             task.connectedMember = msg.sender;
             task.semOpt = msg.message.semOption;
             [self.manager addTaskToQueue:task];
