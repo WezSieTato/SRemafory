@@ -7,8 +7,10 @@
 //
 
 #import "SRerwer.h"
-#import "TaskServerWantSemCreate.h"
+#import "AskTaskSemCreate.h"
 #import "ClientSemCreateTask.h"
+#import "AskTaskSemCheck.h"
+#import "ClientSemCheckTask.h"
 
 @implementation SRerwer
 
@@ -18,8 +20,11 @@
         _foreignSemaphores = [ForeignSemaphores new];
         _serverSemaphores = [ServerSemaphores new];
         
-        [self.taskManager addTask: [TaskServerWantSemCreate new]];
+        [self.taskManager addTask: [AskTaskSemCreate new]];
         [self.taskManager addTask: [ClientSemCreateTask new]];
+        
+        [self.taskManager addTask: [AskTaskSemCheck new]];
+        [self.taskManager addTask: [ClientSemCheckTask new]];
         
     }
     

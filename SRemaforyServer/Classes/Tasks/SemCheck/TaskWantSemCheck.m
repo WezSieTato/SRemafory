@@ -8,9 +8,7 @@
 
 #import "TaskWantSemCheck.h"
 
-@implementation TaskWantSemCheck{
-    NSUInteger countServers;
-}
+@implementation TaskWantSemCheck
 
 -(instancetype)init{
     self = [super init];
@@ -30,9 +28,9 @@
     } else  {
         //        RemoveTask(msg.type, msg.semOption.name, msg.info.client);
         //        response = CreateMessage(msg, Message.MessageType.SEM_CREATE, Message.Response.ERROR);
-        MessageBuilder *builder = [MessageBuilder builderWithType:MessageMessageTypeSemCreate];
+        MessageBuilder *builder = [MessageBuilder builderWithMessage:msg.message];
         [builder setResponse:MessageResponseOk];
-        [builder setSemOption:_semOpt];
+        [builder setSemOption:self.semOpt];
         
         [self.connectedMember sendMessageFromBuilder:builder];
         [self removeFromManager];
@@ -46,7 +44,7 @@
     
     MessageBuilder *builder = [MessageBuilder builderWithType:MessageMessageTypeSemCheck];
     [builder setResponse:MessageResponseOk];
-    [builder setSemOption:_semOpt];
+    [builder setSemOption: self.semOpt];
     [builder setClientId:[self.connectedMember.idNumber intValue]];
     
     [self.connectedMember sendMessageFromBuilder:builder];

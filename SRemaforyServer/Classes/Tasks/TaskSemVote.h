@@ -7,6 +7,7 @@
 //
 
 #import "TimeTask.h"
+#import "SR+SRerwer.h"
 
 @interface TaskSemVote : TimeTask
 

@@ -1,14 +1,13 @@
 //
-//  AskTask.h
+//  AskTaskSemP.h
 //  SRemafory
 //
 //  Created by Marcin Stepnowski on 05/02/15.
 //  Copyright (c) 2015 siema. All rights reserved.
 //
 
-#import "Task.h"
-#import "SR+SRerwer.h"
+#import "AskTask.h"
 
-@interface AskTask : Task
+@interface AskTaskSemP : AskTask
 
 @end

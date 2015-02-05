@@ -1,21 +1,20 @@
 //
-//  AskTaskSemCheck.m
+//  AskTaskSemP.m
 //  SRemafory
 //
 //  Created by Marcin Stepnowski on 05/02/15.
 //  Copyright (c) 2015 siema. All rights reserved.
 //
 
-#import "AskTaskSemCheck.h"
-#import "TaskMessage.h"
+#import "AskTaskSemP.h"
 
-@implementation AskTaskSemCheck
+@implementation AskTaskSemP
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        [self addFilterForMessageType:MessageMessageTypeSemCheck];
+        [self addFilterForMessageType:MessageMessageTypeSemP];
     }
     return self;
 }
@@ -23,11 +22,19 @@
 -(BOOL)processMessage:(TaskMessage *)msg{
     NSString* semName = msg.message.semOption.name;
     MessageBuilder* builder = [MessageBuilder builderWithMessage:msg.message];
-    //    [builder setSemName:semName];
+    SRerwer *sr = self.manager.sr.asSRerwer;
+    Member* mem = msg.sender;
+
     if ([self.manager.sr.asSRerwer existSemaphore:semName]) {
-        [builder setResponse:MessageResponseOk];
+        ServerSemaphore* sem = sr.serverSemaphores.map[semName];
+        BOOL p = [sem pByMember:mem];
+        if(p){
+            builder.response = MessageResponseOk;
+        }else{
+            builder.response = MessageResponseNo;
+        }
     } else {
-        [builder setResponse:MessageResponseNo];
+        [builder setResponse:MessageResponseError];
     }
     
     [msg.sender sendMessageFromBuilder:builder];

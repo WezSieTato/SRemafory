@@ -40,7 +40,8 @@
             //TASK!!!!!!!
             TaskWantSemCheck* task = [TaskWantSemCheck new];
             task.connectedMember = msg.sender;
-            task.se
+            task.semOpt = msg.message.semOption;
+            [self.manager addTaskToQueue:task];
             
         }
     }

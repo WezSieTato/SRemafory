@@ -45,7 +45,9 @@
         [self voted];
 }
 
--(void)voted;
+-(void)voted{
+    
+}
 
 -(void)veto{
     [self removeFromManager];

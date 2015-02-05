@@ -32,7 +32,7 @@
 //        response = CreateMessage(msg, Message.MessageType.SEM_CREATE, Message.Response.ERROR);
         MessageBuilder *builder = [MessageBuilder builderWithMessage:msg.message];
         [builder setResponse:MessageResponseError];
-        [builder setSemOption:_semOpt];
+        [builder setSemOption:self.semOpt];
         
         [self.connectedMember sendMessageFromBuilder:builder];
         [self removeFromManager];
@@ -42,11 +42,12 @@
 
 -(void)voted{
 //    response = CreateMessage(msg, Message.MessageType.SEM_CREATE, Message.Response.OK);
-    [self.manager.sr.asSRerwer.serverSemaphores createSemaphore:_semOpt.name value:_semOpt.value];
+    [self.manager.sr.asSRerwer.serverSemaphores createSemaphore:self.semOpt.name value:self.semOpt.value];
     
-    MessageBuilder *builder = [MessageBuilder builderWithMessage:msg.message];
+    MessageBuilder *builder = [MessageBuilder builderWithType:MessageMessageTypeSemCreate];
     [builder setResponse:MessageResponseOk];
-    [builder setSemOption:_semOpt];
+    [builder setSemOption:self.semOpt];
+    [builder setClientId:[self.connectedMember.idNumber intValue]];
     
     [self.connectedMember sendMessageFromBuilder:builder];
     [self removeFromManager];
