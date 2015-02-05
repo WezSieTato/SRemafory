@@ -55,6 +55,7 @@
 		D3B07EDF1A82A9F00050A49B /* TaskServerWantSemCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EDE1A82A9F00050A49B /* TaskServerWantSemCreate.m */; };
 		D3B07EE31A82AE1E0050A49B /* SRient.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EE21A82AE1E0050A49B /* SRient.m */; };
 		D3B07EE61A82AE300050A49B /* SR+SRient.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B07EE51A82AE300050A49B /* SR+SRient.m */; };
+		D3C7577A1A8379110043CAE2 /* CheckBlockTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C757791A8379110043CAE2 /* CheckBlockTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +136,8 @@
 		D3C56AE51A811F32001A6C7D /* ZMQSocket+Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZMQSocket+Message.m"; sourceTree = "<group>"; };
 		D3C56AE91A81491B001A6C7D /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
 		D3C56AEA1A81491B001A6C7D /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
+		D3C757781A8379110043CAE2 /* CheckBlockTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckBlockTask.h; sourceTree = "<group>"; };
+		D3C757791A8379110043CAE2 /* CheckBlockTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckBlockTask.m; sourceTree = "<group>"; };
 		DD608B62926DCAB566EDD62D /* libPods-SRemaforyServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SRemaforyServer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED68C776A579854B6E214642 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EF1A0C818D49697FA38459BC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,6 +280,8 @@
 				D3B07EDB1A82A0BB0050A49B /* TaskWantSemCreate.m */,
 				D3B07EDD1A82A9F00050A49B /* TaskServerWantSemCreate.h */,
 				D3B07EDE1A82A9F00050A49B /* TaskServerWantSemCreate.m */,
+				D3C757781A8379110043CAE2 /* CheckBlockTask.h */,
+				D3C757791A8379110043CAE2 /* CheckBlockTask.m */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -535,6 +540,7 @@
 				655CB3921A81B0DE00FFF253 /* TaskGetHB.m in Sources */,
 				655CB3981A81B0E900FFF253 /* Message.pb.m in Sources */,
 				D3B07EA01A82733A0050A49B /* TimeTask.m in Sources */,
+				D3C7577A1A8379110043CAE2 /* CheckBlockTask.m in Sources */,
 				655CB3971A81B0E300FFF253 /* TaskManager.m in Sources */,
 				655CB3951A81B0E300FFF253 /* SR.m in Sources */,
 				655CB3781A81B03F00FFF253 /* main.m in Sources */,

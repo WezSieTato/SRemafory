@@ -30,4 +30,13 @@
     return [_foreignSemaphores exist:name] || [_serverSemaphores exist:name];
 }
 
+-(void)sendCheckBlock:(Member *)initialMember client:(Member *)client semName:(NSString *)name{
+    MessageBuilder* builder = [MessageBuilder builderWithType:MessageMessageTypeCheckBlock];
+    [builder setCheckBlockWithInit:[[initialMember idNumber] intValue]
+                           sending:[[client idNumber] intValue]
+                            andSem:name];
+    
+    [self sendToAllServersMsgFrom:builder];
+}
+
 @end

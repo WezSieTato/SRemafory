@@ -49,6 +49,10 @@ static int defaultIpIndex;
     defaultIpIndex = ip;
 }
 
++(int)ipIndex{
+    return defaultIpIndex;
+}
+
 -(void)setClientId:(SInt32)idNumber{
     MessageInfoBuilder* builderInfo = [MessageInfo builder];
     [builderInfo setIpIndex:defaultIpIndex];

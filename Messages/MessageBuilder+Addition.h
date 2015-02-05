@@ -13,6 +13,7 @@
 
 +(instancetype)builderWithType:(MessageMessageType)type;
 +(void)setDefaultIpIndex:(int)ip;
++(int)ipIndex;
 +(instancetype)builderWithMessage:(Message*)msg;
 
 -(void)setClientId:(SInt32)idNumber;
