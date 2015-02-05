@@ -16,6 +16,6 @@
 @property (strong, nonatomic) ForeignSemaphores* foreignSemaphores;
 
 -(BOOL)existSemaphore:(NSString*)name;
--(void)sendCheckBlock:(Member*) initialMember client:(Member*)client semName: (NSString*)name;
+-(void)sendCheckBlock:(int) initialMember client:(int)client semName: (NSString*)name;
 
 @end

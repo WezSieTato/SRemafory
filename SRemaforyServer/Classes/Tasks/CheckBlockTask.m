@@ -35,11 +35,10 @@
             
         } else {
             for (ServerSemaphore *sem in [sr.serverSemaphores.map allValues]) {
-                Member* client = sr.membersClients[[NSNumber numberWithInt:msg.message.checkBlock.initClient]];
 
                 for (Member* waiting in sem.waitingClients) {
-                    [sr sendCheckBlock:client
-                                client:waiting
+                    [sr sendCheckBlock:msg.message.checkBlock.initClient
+                                client:[waiting.idNumber intValue]
                                semName:semName];
                 }
             }

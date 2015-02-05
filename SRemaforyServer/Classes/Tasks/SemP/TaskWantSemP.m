@@ -35,9 +35,7 @@
         [self.connectedMember sendMessageFromBuilder:builder];
         [self removeFromManager];
         
-        /**
-         *  Odpalamy block_check
-         */
+        
     }
     return YES;
 }

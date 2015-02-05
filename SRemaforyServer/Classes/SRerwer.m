@@ -17,6 +17,7 @@
 #import "ClientSemVTask.h"
 #import "AskTaskSemDestroy.h"
 #import "ClientSemDestroyTask.h"
+#import "CheckBlockTask.h"
 
 @implementation SRerwer
 
@@ -41,6 +42,9 @@
         [self.taskManager addTask: [AskTaskSemDestroy new]];
         [self.taskManager addTask: [ClientSemDestroyTask new]];
         
+        [self.taskManager addTask: [CheckBlockTask new]];
+
+        
     }
     
     return self;
@@ -50,10 +54,10 @@
     return [_foreignSemaphores exist:name] || [_serverSemaphores exist:name];
 }
 
--(void)sendCheckBlock:(Member *)initialMember client:(Member *)client semName:(NSString *)name{
+-(void)sendCheckBlock:(int)initialMember client:(int)client semName:(NSString *)name{
     MessageBuilder* builder = [MessageBuilder builderWithType:MessageMessageTypeCheckBlock];
-    [builder setCheckBlockWithInit:[[initialMember idNumber] intValue]
-                           sending:[[client idNumber] intValue]
+    [builder setCheckBlockWithInit:initialMember
+                           sending:client
                             andSem:name];
     
     [self sendToAllServersMsgFrom:builder];

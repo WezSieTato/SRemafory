@@ -448,8 +448,8 @@
 			children = (
 				D3C757971A837D4F0043CAE2 /* AskTaskSemP.h */,
 				D3C757981A837D4F0043CAE2 /* AskTaskSemP.m */,
-				D3C757991A837D4F0043CAE2 /* ClienkSemPTask.m */,
 				D3C7579A1A837D4F0043CAE2 /* ClientSemPTask.h */,
+				D3C757991A837D4F0043CAE2 /* ClienkSemPTask.m */,
 				D3C7579B1A837D4F0043CAE2 /* TaskWantSemP.h */,
 				D3C7579C1A837D4F0043CAE2 /* TaskWantSemP.m */,
 			);

@@ -36,9 +36,9 @@
             builder.response = MessageResponseNo;
             [msg.sender sendMessageFromBuilder:builder];
             
-            /**
-             *  Odpalic algorytm
-             */
+            [sr sendCheckBlock:[MessageBuilder ipIndex]
+                        client:[MessageBuilder ipIndex]
+                       semName:name];
         }
         
     } else {
