@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 siema. All rights reserved.
 //
 
-#import "TimeTask.h"
+#import "TaskSemVote.h"
 
-@interface TaskWantSemCreate : TimeTask
+@interface TaskWantSemCreate : TaskSemVote
 
-@property (strong) MessageSemOptions* semOpt;
+
 
 @end

@@ -65,6 +65,9 @@
         [_messagesLock unlock];
         
         for(TaskMessage* msg in msgs){
+        
+            [_tasks addObjectsFromArray:_incomingTasks];
+            [_incomingTasks removeAllObjects];
             
             for(Task* task in self.tasks){
                 if([task canProcessMessage:msg])
@@ -74,8 +77,7 @@
             
             [_tasks removeObjectsInArray:_outcomingTasks];
             [_outcomingTasks removeAllObjects];
-            [_tasks addObjectsFromArray:_incomingTasks];
-            [_incomingTasks removeAllObjects];
+
         }
         
         [_messagesLock lock];

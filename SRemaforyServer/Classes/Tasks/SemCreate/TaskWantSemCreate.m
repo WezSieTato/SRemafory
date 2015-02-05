@@ -10,71 +10,48 @@
 #import "TaskMessage.h"
 #import "SR+SRerwer.h"
 
-@implementation TaskWantSemCreate{
-    NSUInteger countServers;
-}
+@implementation TaskWantSemCreate
 
 -(instancetype)init{
     self = [super init];
     if(self ) {
         [self addFilterForMessageType:MessageMessageTypeSemCreate];
-        [self addFilterForResponseType:MessageResponseOk];
-        [self addFilterForResponseType:MessageResponseNo];
-        [self addFilterForConnectedClient];
 
     }
     
     return self;
 }
 
--(void)setManager:(TaskManager *)manager{
-    [super setManager:manager];
-    countServers = manager.sr.asSRerwer.countAliveServers;
-}
-
-//-(BOOL)canProcessMessage:(TaskMessage *)msg{
-//    if([super canProcessMessage:msg]){
-//        MessageResponse resp = msg.message.response;
-//        if(resp == MessageResponseOk || resp == MessageResponseNo)
-//            return YES;
-//    }
-//    
-//    return NO;
-//}
 
 -(BOOL)processMessage:(TaskMessage *)msg{
     MessageResponse resp = msg.message.response;
     if(resp == MessageResponseNo){
-        --countServers;
-        if(countServers == 0)
-            [self createSem];
+        [self voiceUp];
     } else  {
 //        RemoveTask(msg.type, msg.semOption.name, msg.info.client);
 //        response = CreateMessage(msg, Message.MessageType.SEM_CREATE, Message.Response.ERROR);
-        MessageBuilder *builder = [MessageBuilder builderWithType:MessageMessageTypeSemCreate];
+        MessageBuilder *builder = [MessageBuilder builderWithMessage:msg.message];
         [builder setResponse:MessageResponseError];
-        [builder setSemOption:_semOpt];
+        [builder setSemOption:self.semOpt];
         
-        [msg.sender sendMessageFromBuilder:builder];
+        [self.connectedMember sendMessageFromBuilder:builder];
         [self removeFromManager];
     }
     return YES;
 }
 
--(void)createSem{
+-(void)voted{
 //    response = CreateMessage(msg, Message.MessageType.SEM_CREATE, Message.Response.OK);
-    [self.manager.sr.asSRerwer.serverSemaphores createSemaphore:_semOpt.name value:_semOpt.value];
+    [self.manager.sr.asSRerwer.serverSemaphores createSemaphore:self.semOpt.name value:self.semOpt.value];
     
     MessageBuilder *builder = [MessageBuilder builderWithType:MessageMessageTypeSemCreate];
     [builder setResponse:MessageResponseOk];
-    [builder setSemOption:_semOpt];
+    [builder setSemOption:self.semOpt];
+    [builder setClientId:[self.connectedMember.idNumber intValue]];
     
     [self.connectedMember sendMessageFromBuilder:builder];
     [self removeFromManager];
 }
 
--(void)expire{
-    [self createSem];
-}
 
 @end

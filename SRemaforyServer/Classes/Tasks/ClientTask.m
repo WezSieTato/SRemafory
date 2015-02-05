@@ -7,6 +7,8 @@
 //
 
 #import "ClientTask.h"
+#import "TaskManager.h"
+#import "TaskWantSemCreate.h"
 
 @implementation ClientTask
 
