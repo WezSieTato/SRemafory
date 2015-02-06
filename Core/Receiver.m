@@ -7,6 +7,7 @@
 //
 
 #import "Receiver.h"
+#import "Message+Additions.h"
 
 @interface Receiver ()
 
@@ -41,6 +42,7 @@
 -(void)startReceive{
     while (1) {
         Message* msg = [self.socket receiveMessage];
+        NSLog(@"Received %@, from %i", [msg desc], msg.info.ipIndex);
         [[self delegate] receiver:self didReceiveMessage:msg];
     }
 }

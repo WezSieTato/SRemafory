@@ -11,6 +11,7 @@
 #import "TaskGetHB.h"
 #import "GCDTimer.h"
 #import "TaskManager.h"
+#import "Message+Additions.h"
 
 @interface Member (){
     GCDTimer _timer;
@@ -45,7 +46,7 @@
     _conected = [self.socket connectToEndpoint:endpoint];
     if(_conected){
 
-        NSLog(@"Wysylamy HB!");
+//        NSLog(@"Wysylamy HB!");
         [self sendHB];
         
         TaskGetHB* task = [TaskGetHB new];
@@ -70,13 +71,12 @@
 }
 
 -(void)sendMessage:(Message *)msg{
+    NSLog(@"Send %@, to %i", [msg desc], [self.idNumber intValue]);
     [self.socket sendMessage:msg];
-    [self resetTimer];
 }
 
 -(void)sendMessageFromBuilder:(MessageBuilder *)msgBuilder{
-    [self resetTimer];
-    [self.socket sendMessage:[msgBuilder build]];
+    [self sendMessage:[msgBuilder build]];
 }
 
 -(void)resetTimer{
@@ -85,6 +85,7 @@
 }
 
 -(void)sendHB{
+    [self resetTimer];
     MessageBuilder* builder = [MessageBuilder builderWithType:MessageMessageTypeHb];
     [self sendMessageFromBuilder:builder];
 }

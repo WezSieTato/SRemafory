@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "SR.h"
+#import "SR+SRient.h"
 
 @interface AppDelegate ()
 @property (strong) SR* sr;
@@ -17,7 +17,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-    _sr = [SR new];
+    _sr = [SRient new];
     
     [MessageBuilder setDefaultIpIndex:12];
     

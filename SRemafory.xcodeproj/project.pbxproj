@@ -70,6 +70,8 @@
 		D3C757B01A837D4F0043CAE2 /* AskTaskSemV.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7579F1A837D4F0043CAE2 /* AskTaskSemV.m */; };
 		D3C757B11A837D4F0043CAE2 /* ClientSemVTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C757A11A837D4F0043CAE2 /* ClientSemVTask.m */; };
 		D3C757B21A837D4F0043CAE2 /* TaskWantSemV.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C757A31A837D4F0043CAE2 /* TaskWantSemV.m */; };
+		D3C757C81A83930B0043CAE2 /* Message+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C757C71A83930B0043CAE2 /* Message+Additions.m */; };
+		D3C757C91A83930B0043CAE2 /* Message+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C757C71A83930B0043CAE2 /* Message+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -180,6 +182,8 @@
 		D3C757A11A837D4F0043CAE2 /* ClientSemVTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientSemVTask.m; sourceTree = "<group>"; };
 		D3C757A21A837D4F0043CAE2 /* TaskWantSemV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskWantSemV.h; sourceTree = "<group>"; };
 		D3C757A31A837D4F0043CAE2 /* TaskWantSemV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskWantSemV.m; sourceTree = "<group>"; };
+		D3C757C61A83930B0043CAE2 /* Message+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Message+Additions.h"; sourceTree = "<group>"; };
+		D3C757C71A83930B0043CAE2 /* Message+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Message+Additions.m"; sourceTree = "<group>"; };
 		DD608B62926DCAB566EDD62D /* libPods-SRemaforyServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SRemaforyServer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED68C776A579854B6E214642 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EF1A0C818D49697FA38459BC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -374,6 +378,8 @@
 				D3C56AE11A81172E001A6C7D /* MessageBuilder+Addition.m */,
 				D3C56AE41A811F32001A6C7D /* ZMQSocket+Message.h */,
 				D3C56AE51A811F32001A6C7D /* ZMQSocket+Message.m */,
+				D3C757C61A83930B0043CAE2 /* Message+Additions.h */,
+				D3C757C71A83930B0043CAE2 /* Message+Additions.m */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -644,6 +650,7 @@
 				D3B07EC81A8286460050A49B /* ServerSemaphore.m in Sources */,
 				655CB3931A81B0E300FFF253 /* Member.m in Sources */,
 				D3C757B21A837D4F0043CAE2 /* TaskWantSemV.m in Sources */,
+				D3C757C81A83930B0043CAE2 /* Message+Additions.m in Sources */,
 				655CB3991A81B0E900FFF253 /* MessageBuilder+Addition.m in Sources */,
 				D3C757AF1A837D4F0043CAE2 /* TaskWantSemP.m in Sources */,
 				D3B07ED31A8296460050A49B /* ClientTask.m in Sources */,
@@ -685,6 +692,7 @@
 			files = (
 				D3B07E931A825EF30050A49B /* Task.m in Sources */,
 				D3B07E781A825E1D0050A49B /* ViewController.m in Sources */,
+				D3C757C91A83930B0043CAE2 /* Message+Additions.m in Sources */,
 				D3B07E751A825E1D0050A49B /* main.m in Sources */,
 				D3B07E9A1A825EFA0050A49B /* ZMQSocket+Message.m in Sources */,
 				D3B07E731A825E1D0050A49B /* AppDelegate.m in Sources */,

@@ -26,7 +26,7 @@
 }
 
 -(BOOL)processMessage:(TaskMessage *)msg{
-    NSLog(@"Dostalim HB! %@", [[self.connectedMember idNumber] stringValue]);
+//    NSLog(@"Dostalim HB! %@", [[self.connectedMember idNumber] stringValue]);
     [self resetTimer];
 
     return YES;

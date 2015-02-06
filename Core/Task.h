@@ -25,9 +25,9 @@
 -(BOOL)canProcessMessage:(TaskMessage*)msg;
 
 /**
+ * 
  *
- *
- *  @param msg
+ *  @param msg message to process
  *
  *  @return YES if message can be procces by another task
  */
